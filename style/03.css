@@ -1,0 +1,296 @@
+
+:root {
+    --color1: #e3fa9e; /*text color*/
+    --color2: #000000; /*background color, formerly #FF001F, #FF0040 */
+    --color3: #foffac; /*#foffac*/
+    --color4: #000000; /*#a1f4c3*/
+    --color4: #000000; /*#ff0073*/
+    --color5: #000000; /*#ff0000*/
+    --pink: #8888dd;
+    --green: #00b300;
+    --deffont: Arial
+
+}
+
+body {
+ background-color: var(--color2);
+ color: var(--color1);
+ font-family: var(--deffont);
+  font-weight: 700;
+}
+
+@font-face { font-family: Chicago; src: url('Chicago.ttf'); } 
+@font-face { font-family: handelgothic; src: url('handelgothic.otf'); }
+@font-face { font-family: simsun; src: url('simsun.ttf'); } 
+@font-face { font-family: rodin; src: url('rodin.otf'); } 
+@font-face { font-family: pokemon; src: url('pokemon.ttf'); }
+@font-face { font-family: tahoma; src: url('tahoma.ttf'); } 
+@font-face { font-family: mincho; src: url('mincho.ttf');  }
+@font-face { font-family: ggsans; src: url('ggsans.ttf');  }
+
+.cooldiv
+        {height: 4px; 
+          max-width:512px;
+            width:100%; 
+            background-color: var(--color1);
+            margin: auto; 
+        }
+
+.thugdiv
+        {
+height: 100%;  
+width:100%;  
+            text-align: center;  
+            margin-left: auto; 
+            margin-right: auto;
+        position:relative;
+        max-width: 512px; 
+        } 
+
+.sitecontent
+        {
+height: 100%;  
+width:100%;  
+            text-align: center;  
+           padding-top: 140px; 
+            padding-bottom: 140px; 
+        position:relative;
+        } 
+
+.sitebump
+{
+    bottom: 0;
+  position: fixed;
+background-color: var(--color2);
+  left: 50%;
+  margin: 0;
+    transform: translate(-50%, 0%);
+  z-index:1;
+  width:100%; max-width:512px;
+}
+
+.sitebox
+{ 
+            margin-left: auto; 
+            margin-right: auto;
+        max-width: fit-content; 
+}
+
+.greentext
+{
+text-align: left; 
+font-size:16px; 
+margin:20px;
+color: var(--green);
+text-shadow: 0px 0px 2px var(--green);
+}
+
+.pinktext
+{
+text-align: left; 
+font-size:16px; 
+margin:20px;
+color: var(--pink);
+text-shadow: 0px 0px 2px var(--pink);
+}
+
+img {
+    image-rendering: pixelated;
+    max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+    }
+    
+.abutton {
+  color: var(--color2);
+  background-color: var(--color1);
+  box-shadow: -2px -1px 2px var(--color1);
+ /*   border-width: 2px; */
+  border-style: none; 
+margin-top: 6px;
+margin-bottom: 12px;
+margin: 8px;
+padding-right: 12px;
+padding-left: 12px;
+padding-bottom: 4px;
+padding-top: 4px;
+font-size: 16px;
+line-height: 200%;
+text-decoration: none;
+border-radius: 2em
+   }
+
+.abutton:hover {
+  color: var(--color1);
+  background-color: var(--color2);
+  border-color: var(--hovercolor); 
+  border-style: solid;
+  border-width: 2px;
+   }
+
+a:visited {
+  color: var(--color2);
+  background-color: var(--color1);
+  }
+
+a:hover {
+  color: var(--color1);
+  background-color: var(--color2);
+  }
+
+.title 
+{text-decoration: underline;
+margin:0; 
+margin-left:20px;
+font-size: 32px;
+text-align:left;
+justify-content:left;
+display: grid;
+}
+
+.title:visited {
+var(--color1);
+  }
+
+h1
+{margin:0}
+
+h2
+{
+font-size: 32px;
+font-weight: 100;
+}
+
+h3
+{
+font-size: 24px;
+font-weight: 100;
+}
+
+.galdiv {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+  
+max-width: 1024px;
+            
+            
+        }
+
+.galimg {
+            flex: 1 1 calc(33.333% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+            
+        }
+
+        .galimg:hover  a{
+            color: var(--hovercolor);
+                  }
+
+.galpic 
+        {
+            width: 100%;
+            height: auto;
+
+        }
+
+.galhovimg {
+    flex: 1 1 calc(33.333% - 20px);
+    box-sizing: border-box;
+    text-align: center;
+            position: relative;
+            display: inline-block;
+            
+            
+          }
+
+.galhovimg img {
+            display: block;
+            transition: opacity 0.3s ease;
+            width: 100%;
+            height: auto;
+          }
+
+.galhovimg img.top:hover {
+            opacity: 0;
+          }
+
+.galhovimg:hover  a{
+    color: var(--hovercolor);
+          }
+        
+.hiddentxt {
+    color:#000000;
+}
+
+.griddiv
+        {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            row-gap: 60px;
+            height: 100%;  
+            width:100%;  
+            padding-top:10px;
+            padding-bottom:10px;
+            font-size: 36px;
+            
+        }
+
+
+
+a[href="https://www.jakobutter.net"] {color: var(--color1); text-decoration: underline);}
+/*a[href="/releases"] {background-image: linear-gradient(45deg, #FFC7EE, #FFF0FA);}
+a[href="/gallery"] {background-image: linear-gradient(45deg, #FFE0BF, #FF7070);}
+a[href="/entries"] {background-image: linear-gradient(45deg, #E6D0FF, #AE6AFF);}
+a[href="/contact"] {background-image: linear-gradient(45deg, #F0FF4C, #A1F4C3);}
+a[href="https://youtube.com/@yungulcer"] {background-image: linear-gradient(45deg, #FF0000, #B00000); color:white; text-shadow: 1px 1px black;}
+a[href="https://yungulcer.bandcamp.com"] {background-image: linear-gradient(45deg, #1DA0C3, #333333); color:white; text-shadow: 1px 1px black;}
+a[href="https://www.soundcloud.com/jakobutter"] {background-image: linear-gradient(45deg, #FF4600, #FFC560); color:white; text-shadow: 1px 1px black;}
+a[href="https://open.spotify.com/artist/4gG6PkE4Pa3gaqCA0Ms0Zf"] {background-image: linear-gradient(45deg, #24E484, #00B85C); color:white; text-shadow: 1px 1px black;}
+a[href="https://x.com/pinksisser"] {background-image: linear-gradient(45deg, #2FDEFF, #2DB0C9); color:white; text-shadow: 1px 1px black;}
+a[href="https://music.apple.com/us/artist/yung-ulcer/1725588092"] {background-image: linear-gradient(45deg, #FA203A, #FC5E76); color:white; text-shadow: 1px 1px black;}*/
+
+@keyframes rainbow {
+         0% {background-position:0% 100%}
+         50%{background-position:100% 0%}
+         100% {background-position:0% 100%}
+      }
+
+.marquee {
+  width: 100%;
+  pointer-events: none;
+    background-color: var(--color1);
+  overflow: hidden;
+}
+
+.marquee__inner-wrap {
+  height: 100%;
+  width: 100%;
+}
+
+.marquee span {
+  text-align: center;
+    color: var(--color2);
+   font-weight: bold;
+  white-space: nowrap;
+}
+
+
+.marquee__inner {
+  height: 100%;
+  width: fit-content;
+  align-items: center;
+  display: flex;
+  position: relative;
+  animation: marquee 16s linear infinite;
+  will-change: transform;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
