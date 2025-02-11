@@ -27,7 +27,7 @@ body {
 
 .document{font-size:10pt}
 .document h6{font-family:'Arial', sans-serif}.document h1{font-size:14pt;font-weight:bold}
-.document h2{font-size:12pt;font-weight:bold;font-style:italic;color:var(--color2)}
+.document h2{font-size:12pt;font-weight:bold;font-style:italic;color:var(--color1)}
 .document h1{font-size:20pt;font-weight:bold;color:var(--color1)}
 .document h3{font-size:12pt;font-weight:normal}
 .document table{font-size:10pt}
