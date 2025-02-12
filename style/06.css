@@ -20,7 +20,7 @@ body {
 @font-face { font-family: handelgothic; src: url('handelgothic.ttf'); }
 @font-face { font-family: simsun; src: url('simsun.ttf'); } 
 @font-face { font-family: rodin; src: url('rodin.otf'); } 
-@font-face { font-family: pokemon; src: url('pokemon.ttf'); }
+@font-face { font-family: sans; src: url('sans.ttf'); }
 @font-face { font-family: tahoma; src: url('tahoma.ttf'); } 
 @font-face { font-family: mincho; src: url('mincho.ttf');  }
 @font-face { font-family: ggsans; src: url('ggsans.ttf');  }
