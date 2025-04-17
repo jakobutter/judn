@@ -24,6 +24,7 @@ body {
 @font-face { font-family: tahoma; src: url('tahoma.ttf'); } 
 @font-face { font-family: mincho; src: url('mincho.ttf');  }
 @font-face { font-family: ggsans; src: url('ggsans.ttf');  }
+@font-face { font-family: vcr; src: url('vcr.ttf');  }
 
 .document{font-size:10pt}
 .document h6{font-family:'Arial', sans-serif}.document h1{font-size:14pt;font-weight:bold}
