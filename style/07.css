@@ -1,17 +1,18 @@
 :root {
     --color1: #000000; /*text color*/
-    --color2: #FFB4DCC0; /*window color*/
+    --color2: #FF9BD0C0; /*window color*/
     --color3: #000000; /*bg color*/
     --color4: #A3738D; /*secondary window color*/
-    --color5: #FFB4DC; /*window color opaque*/
+    --color5: #FF9BD0; /*window color opaque*/
     --deffont: simsun
 
 }
 
 body{-webkit-font-smoothing:none;
   font-size:8pt;
+   font-family: var(--deffont);
   color: var(--color1);
-  background-image: url("https://www.nasa.gov/wp-content/uploads/2023/06/stsci-01h1q2vfhvmajgh4wrnmk0dy52.png");
+  background-image: url("/img/space.png");
   background-attachment:fixed;
   margin:12px}
 
@@ -24,7 +25,7 @@ img{max-width:256px;}
 
 .window{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color2), var(--color2), var(--color2));padding:3px;max-width:288px;margin:0 auto;box-shadow:inset -1px -1px #A3738D,inset 1px 1px #FFD8ED}
 
-.topwindow{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color5), var(--color2));box-shadow:inset -1px -1px #A3738D,inset 1px 1px #FFD8ED; margin:0 auto; top: 0; left: 0; position: fixed; justify-content:center; text-align:center;
+.topwindow{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color5), var(--color2));box-shadow:inset -1px -1px #FF118E,inset 1px 1px #FFCEE8; margin:0 auto; top: 0; left: 0; position: fixed; justify-content:center; text-align:center;
   z-index:1;
   width:100%;}
 
