@@ -9,7 +9,7 @@
 }
 
 body{-webkit-font-smoothing:none;
-  font-size:8pt;
+  font-size:12px;
    font-family: var(--deffont);
   color: var(--color1);
   background-image: url("/img/space.png");
@@ -23,14 +23,11 @@ img{max-width:256px;}
   display: flex; text-align:center; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 1024px; margin-left:auto; margin-right:auto;
 }
 
-.window{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color2), var(--color2), var(--color2));padding:3px;max-width:288px;margin:0 auto;box-shadow:inset -1px -1px #A3738D,inset 1px 1px #FFD8ED}
+.window{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color2), var(--color2), var(--color2));padding:3px;max-width:288px;margin:0 auto;box-shadow:inset -1px -1px #FF118E,inset 1px 1px #FFCEE8}
 
 .topwindow{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color5), var(--color2));box-shadow:inset -1px -1px #FF118E,inset 1px 1px #FFCEE8; margin:0 auto; top: 0; left: 0; position: fixed; justify-content:center; text-align:center;
   z-index:1;
   width:100%;}
-
-.social-icons{display:flex;justify-content:center;font-size:12px}
-.social-icon{text-align:center;width:16px;height:16px;padding:4px;cursor:pointer}
 
 .title-bar{font-size:11px;padding:3px 2px 3px 3px;display:flex;justify-content:space-between;align-items:center}
 
@@ -38,9 +35,12 @@ img{max-width:256px;}
 
 .window-body{margin:4px}fieldset{padding:10px;padding-block-start:8px;margin:0}
 
-.navigation-icons{display:flex;padding:2px;margin:4px;justify-content:center;font-size:12px}
-.navigation-icons a{box-shadow:inset -1px -1px #A3738D,inset 1px 1px #FFD8ED; margin-left:2px; margin-right:2px; padding-left:6px; padding-right:6px; background-color:var(--color5)}
+.navigation-icons{display:flex;padding:2px;justify-content:center;font-size:12px}
+.navigation-icons a{box-shadow:inset -1px -1px #FF118E,inset 1px 1px #FFCEE8; margin-left:2px; margin-right:2px; padding-left:6px; padding-right:6px; background-color:var(--color5)}
 .navigation-icons a:link{color:var(--color1);text-decoration:none}
 .navigation-icon{display:flex;flex-direction:column;text-align:center;height:16px;padding:4px;cursor:pointer}
 .navigation-icon:hover{box-shadow:inset -1px -1px var(--color1),inset 1px 1px var(--color1)}
-.navigation-icon:active{box-shadow:inset -1px -1px var(--color1),inset 1px 1px red}
+.navigation-icon:active{box-shadow:inset -1px -1px var(--color1),inset 1px 1px red}body{-webkit-font-smoothing:none;font-size:8pt;background:var(--color3);margin:12px}
+.drop-icons{display:flex;padding:2px;justify-content:left;}
+.social-icons{display:flex;padding:2px;justify-content:center;font-size:12px}
+.social-icon{display:flex;flex-direction:column;text-align:center;width:16px;height:16px;padding:4px;cursor:pointer}
