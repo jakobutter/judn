@@ -5,17 +5,18 @@
     --color4: #A3738D; /*secondary window color*/
     --color5: #FF9BD0; /*window color opaque*/
     --deffont: simsun
-
 }
 
 body{-webkit-font-smoothing:none;
   font-size:12px;
    font-family: var(--deffont);
   color: var(--color1);
-  background-image: url("/img/space.png");
+  background-image: src: url("/img/space.png");
   background-color: var(--color3);
   background-attachment:fixed;
   margin:12px}
+
+@font-face { font-family: simsun; src: url('simsun.ttf'); } 
 
 h1{font-size:16pt;font-weight:bold;color:var(--color1); margin:0px;}
 img{max-width:256px;}
@@ -41,7 +42,7 @@ img{max-width:256px;}
 .navigation-icons a:link{color:var(--color1);text-decoration:none}
 .navigation-icon{display:flex;flex-direction:column;text-align:center;height:16px;padding:4px;cursor:pointer}
 .navigation-icon:hover{box-shadow:inset -1px -1px var(--color1),inset 1px 1px var(--color1)}
-.navigation-icon:active{box-shadow:inset -1px -1px var(--color1),inset 1px 1px red}body{-webkit-font-smoothing:none;font-size:8pt;background:var(--color3);margin:12px}
+.navigation-icon:active{box-shadow:inset -1px -1px var(--color1),inset 1px 1px red}
 .drop-icons{display:flex;padding:2px;justify-content:left;}
 .social-icons{display:flex;padding:2px;justify-content:center;font-size:12px}
 .social-icon{display:flex;flex-direction:column;text-align:center;width:16px;height:16px;padding:4px;cursor:pointer}
