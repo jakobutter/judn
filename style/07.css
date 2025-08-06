@@ -2,10 +2,12 @@
     --color1: #000000; /*text color*/
     --color2: #FF9BD0C0; /*window color*/
     --color3: #000000; /*bg color*/
-    --color4: #A3738D; /*secondary window color*/
+    --color4: #FFCEE8;/*window accent light*/
     --color5: #FF9BD0; /*window color opaque*/
+    --color6: #FF118E90;/*window accent dark*/
     --deffont: simsun
 }
+@font-face { font-family: simsun; src: url('simsun.ttf'); } 
 
 body{-webkit-font-smoothing:none;
   font-size:12px;
@@ -13,36 +15,29 @@ body{-webkit-font-smoothing:none;
   color: var(--color1);
   background-image: url("https://www.jakobutter.net/img/space.png");
   background-color: var(--color3);
-  background-attachment:fixed;
-  margin:12px}
-
-@font-face { font-family: simsun; src: url('simsun.ttf'); } 
+  background-attachment:fixed}
 
 h1{font-size:16pt;font-weight:bold;color:var(--color1); margin:0px;}
 img{max-width:256px;}
+p{margin:3 0 0 0; padding-left:16px}
 
 .sitecontent{
-  display: flex; text-align:center; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 1024px; margin-left:auto; margin-right:auto;
+  display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 1024px; margin:auto;
 }
 
-.window{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color2), var(--color2), var(--color2));padding:3px;max-width:288px;margin:0 auto
-  //;box-shadow:inset -1px -1px #FF118E,inset 1px 1px #FFCEE8//}
+.window{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color2), var(--color2), var(--color2));padding:6px 6px 6px 6px;max-width:288px;margin-bottom:auto}
+.window.fancy{box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4)}
 
-.topwindow{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color5), var(--color2));box-shadow:inset -1px -1px #FF118E,inset 1px 1px #FFCEE8; margin:0 auto; top: 0; left: 0; position: fixed; padding-left:32px; justify-content:left; text-align:left; z-index:1;
+.topwindow{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color5), var(--color2));box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); margin:0 auto; top: 0; left: 0; position: fixed; padding-left:32px; justify-content:left; text-align:left; z-index:1;
   width:100%;}
-
-.title-bar{font-size:11px;padding:3px 2px 3px 3px;display:flex;justify-content:space-between;align-items:center}
-
-.title-bar-text{font-weight:bold;color:var(--color1);letter-spacing:0}
-
-.window-body{margin:4px}fieldset{padding:10px;padding-block-start:8px;margin:0}
+.title-bar-text{font-weight:bold;color:var(--color1);text-align:left;letter-spacing:0;padding:3px 3px 6px 3px;}
 
 .navigation-icons{display:flex;padding:2px;justify-content:left;font-size:12px}
-.navigation-icons a{box-shadow:inset -1px -1px #FF118E,inset 1px 1px #FFCEE8; margin-left:2px; margin-right:2px; padding-left:6px; padding-right:6px; background-color:var(--color5)}
+.navigation-icons a{box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); margin-left:2px; margin-right:2px; padding-left:6px; padding-right:6px; background-color:var(--color5)}
 .navigation-icons a:link{color:var(--color1);text-decoration:none}
 .navigation-icon{display:flex;flex-direction:column;text-align:center;height:16px;padding:4px;cursor:pointer}
-.navigation-icon:hover{box-shadow:inset -1px -1px var(--color1),inset 1px 1px var(--color1)}
-.navigation-icon:active{box-shadow:inset -1px -1px var(--color1),inset 1px 1px red}
-.drop-icons{display:flex;padding:2px;justify-content:left;}
-.social-icons{display:flex;padding:2px;justify-content:center;font-size:12px}
+.navigation-icon.current {box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6)}
+.navigation-icon:active{box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6)}
+.drop-icons{display:flex;gap:2px;justify-content:left;}
+.social-icons{display:flex;padding:2px;padding-top:64px;justify-content:center;font-size:12px}
 .social-icon{display:flex;flex-direction:column;text-align:center;width:16px;height:16px;padding:4px;cursor:pointer}
