@@ -1,6 +1,6 @@
 .playa{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color5), var(--color2));box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); margin:0 auto; padding-top:6px; padding-bottom:6px; bottom:0px; left:0px; position: fixed; text-align:center; z-index:1;width:100%;}
 
-button{box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); padding:6px; margin-bottom:6px; background-color:var(--color5);align-items: center;height:32px;width:32px;cursor:pointer;border: none;}
+button{box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); padding:6px; margin-bottom:6px; background-color:var(--color5);height:32px;width:32px;cursor:pointer;border: none;font-size:24px;line-height:0px}
 
 button:active{box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6);}
 
