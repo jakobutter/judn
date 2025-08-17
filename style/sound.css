@@ -7,6 +7,7 @@ button:active{box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color
 #scrub-bar {
             height: 16px;
           width: 80%;
+		  max-width:512px;
 display: inline-block;
             cursor: pointer;
    box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6); background-color:var(--color5);

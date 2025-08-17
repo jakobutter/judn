@@ -3,6 +3,7 @@
     let audio = new Audio(songs[currentSongIndex].file);
     let isPlaying = false;
 
+const albumName = document.title;
     const playPauseButton = document.getElementById('play-pause');
     const prevButton = document.getElementById('prev');
     const nextButton = document.getElementById('next');
@@ -11,11 +12,22 @@
     const scrubBar = document.getElementById('scrub-bar');
     const trackList = document.getElementById('track-list');
 
-    function updateTrackList() {
-        trackList.innerHTML = songs.map((song, index) => 
-            `<div class="${index === currentSongIndex ? 'active' : ''}" onclick="playSelectedSong(${index})">${index === currentSongIndex ? '<strong>' + song.name + '</strong>' : song.name}</div>`
-        ).join('');
-    }
+function updateTrackList() {
+    trackList.innerHTML = songs.map((song, index) => {
+        // Format number with leading zero if under 10
+        const trackNumber = String(index + 1).padStart(2, '0');
+
+        // Song name: bold if active, plain otherwise
+        const songName = index === currentSongIndex 
+            ? `<strong>${song.name}</strong>` 
+            : song.name;
+
+        // Number is always bold
+        return `<div class="${index === currentSongIndex ? 'active' : ''}" onclick="playSelectedSong(${index})">
+            <strong>${trackNumber}</strong> ${songName}
+        </div>`;
+    }).join('');
+}
 
     function updateTimeDisplay() {
         const currentTime = Math.floor(audio.currentTime);
@@ -64,22 +76,22 @@
         playSong();
     }
 
-    function updateMediaSession() {
-        if ('mediaSession' in navigator) {
-            navigator.mediaSession.metadata = new MediaMetadata({
-                title: songs[currentSongIndex].name,
-                artist: songs[currentSongIndex].artist,
-                album: songs[currentSongIndex].album,
-                artwork: [
-                    { src: pageArtwork.src, sizes: '512x512', type: 'image/jpeg' }
-                ]
-            });
-            navigator.mediaSession.setActionHandler('play', playSong);
-            navigator.mediaSession.setActionHandler('pause', pauseSong);
-            navigator.mediaSession.setActionHandler('previoustrack', prevSong);
-            navigator.mediaSession.setActionHandler('nexttrack', nextSong);
-        }
+function updateMediaSession() {
+    if ('mediaSession' in navigator) {
+        navigator.mediaSession.metadata = new MediaMetadata({
+            title: songs[currentSongIndex].name,
+            artist: songs[currentSongIndex].artist,
+            album: albumName, // use <title> from the HTML
+            artwork: [
+                { src: pageArtwork.src, sizes: '512x512', type: 'image/jpeg' }
+            ]
+        });
+        navigator.mediaSession.setActionHandler('play', playSong);
+        navigator.mediaSession.setActionHandler('pause', pauseSong);
+        navigator.mediaSession.setActionHandler('previoustrack', prevSong);
+        navigator.mediaSession.setActionHandler('nexttrack', nextSong);
     }
+}
 
     playPauseButton.addEventListener('click', () => {
         isPlaying ? pauseSong() : playSong();
