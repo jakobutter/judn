@@ -22,7 +22,7 @@ img{max-width:256px;}
 p{margin:3 0 0 0; padding-left:16px}
 
 .sitecontent{
-  display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 1024px; margin:auto;
+  display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 1024px; margin:auto;padding-top:64px;
 }
 
 .window{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color2), var(--color2), var(--color2));padding:6px 6px 6px 6px;max-width:288px;margin-bottom:auto}
@@ -32,12 +32,13 @@ p{margin:3 0 0 0; padding-left:16px}
   width:100%;}
 .title-bar-text{font-weight:bold;color:var(--color1);text-align:left;letter-spacing:0;padding:3px 3px 6px 3px;}
 
-.navigation-icons{display:flex;padding:2px;justify-content:left;font-size:12px}
+.navigation-icons{display:flex;padding:2px;justify-content:left;font-size:12px;}
 .navigation-icons a{box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); margin-left:2px; margin-right:2px; padding-left:6px; padding-right:6px; background-color:var(--color5)}
 .navigation-icons a:link{color:var(--color1);text-decoration:none}
-.navigation-icon{display:flex;flex-direction:column;text-align:center;height:16px;padding:4px;cursor:pointer}
+.navigation-icon{display: block;flex-direction:column;text-align:center;height:16px;padding:4px;cursor:pointer}
 .navigation-icon.current {box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6)}
 .navigation-icon:active{box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6)}
-.drop-icons{display:flex;gap:2px;justify-content:left;}
-.social-icons{display:flex;padding:2px;padding-top:64px;justify-content:center;font-size:12px}
-.social-icon{display:flex;flex-direction:column;text-align:center;width:16px;height:16px;padding:4px;cursor:pointer}
+.drop-icons{display:flex;padding:4px;gap:8px;justify-content:left;}
+.dropdown-icons {display: none;position: absolute}
+.dropdown-icons a {text-align:left;justify-content:left}
+.dropdown:hover .dropdown-icons {display: block}

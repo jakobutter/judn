@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>www.jakobutter.net</title>
+    <link href="/style/07.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.jakobutter.net/style/sound.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
+</head>
+<body>
+           <div class="topwindow">
+                <a href="https://www.jakobutter.net"><h1>jakobutter.net</h1></a>
+                          <nav class="navigation-icons">
+
+    <a class="navigation-icon" href="https://www.jakobutter.net">
+        <span>music</span>
+    </a>
+	<vr></vr>            
+    <a class="navigation-icon" href="/gallery">
+        <span>gallery</span>
+    </a>
+    <vr></vr>            
+    <a class="navigation-icon" href="/entries">
+        <span>entries</span>
+    </a>
+<vr></vr> 
+<div class="dropdown">
+    <a class="navigation-icon">
+        <span>links</span>
+    </a>
+          <div class="dropdown-icons">
+    <a class="navigation-icon" href="https://youtube.com/@yungulcer"><img src="https://www.youtube.com/favicon.ico">YouTube
+    </a>
+    <a class="navigation-icon" href="https://music.apple.com/us/artist/yung-ulcer/1725588092"><img src="https://music.apple.com/assets/favicon/favicon-16.png">Apple Music
+    </a>
+    <a class="navigation-icon" href="https://www.instagram.com/yungulcr"><img src="https://www.google.com/s2/favicons?sz=16&amp;domain_url=https%3A%2F%2Finstagram.com">Instagram
+    </a>
+    <a class="navigation-icon" href="https://www.soundcloud.com/jakobutter"><img src="https://soundcloud.com/favicon.ico">SoundCloud
+    </a>
+    <a class="navigation-icon" href="https://open.spotify.com/artist/4gG6PkE4Pa3gaqCA0Ms0Zf"><img src="https://duckduckgo.com/assets/icons/favicons/spotify.png">Spotify
+    </a>
+    <a class="navigation-icon" href="https://x.com/pinksisser"><img src="//external-content.duckduckgo.com/ip3/publish.twitter.com.ico" height="16" width="16">Twitter
+    </a>
+  </div></div>
+    <vr></vr> 
+<div class="dropdown">
+    <a class="navigation-icon">
+        <span>arkive</span>
+    </a>
+          <div class="dropdown-icons">
+<a class="navigation-icon" href="/arkive/ambitious">
+        <span>Ambitious</span>
+    </a>
+<a class="navigation-icon" href="/arkive/ethereal">
+        <span>Ethereal</span>
+    </a>
+<a class="navigation-icon" href="/arkive/forreal">
+        <span>For Real</span>
+    </a>
+<a class="navigation-icon" href="/arkive/oceanrose">
+        <span>Ocean Rose</span>
+    </a>
+<a class="navigation-icon" href="/arkive/ourworlds">
+        <span>Our Worlds</span>
+    </a>
+<a class="navigation-icon" href="/arkive/ourworlds2">
+        <span>Omen Tape</span>
+    </a>
+<a class="navigation-icon" href="/arkive/badomen">
+        <span>Bad Omen</span>
+    </a>
+<a class="navigation-icon" href="/arkive/3dsandthc">
+        <span>3DS&THC</span>
+    </a>
+<a class="navigation-icon" href="/arkive/evergreen">
+        <span>EVERGREEN</span>
+    </a>
+<a class="navigation-icon" href="/arkive/ulcerep">
+        <span>The Yung Ulcer EP</span>
+    </a>
+<a class="navigation-icon" href="/arkive/dirtyblonde">
+        <span>Dirty Blonde</span>
+    </a>     
+<a class="navigation-icon" href="/arkive/makaylaarkive">
+        <span>Makayla Arkive</span>
+    </a>
+<a class="navigation-icon" href="/arkive/anthology1">
+        <span>Anthology 1</span>
+    </a>
+<a class="navigation-icon" href="/arkive/teddy">
+        <span>Teddy (Archive Collection)</span>
+    </a>
+<a class="navigation-icon" href="/arkive/pinksisser">
+        <span>PINK SISSER</span>
+    </a>
+<a class="navigation-icon" href="/arkive/cthulu">
+        <span>CTHULU BLACKPILL</span>
+    </a>
+<a class="navigation-icon" href="/arkive/legendaire">
+        <span>Legendaire</span>
+    </a>
+<a class="navigation-icon current" >
+        <span>frisky danger</span>
+    </a>
+        </div>
+      </div>
+</div>
+                <div class="player-content">
+    <div class="playa">
+    <div>
+        <button id="prev">⏮︎</button>
+        <button id="play-pause">▶</button>
+        <button id="next">⏭︎</button>
+    </div>
+          <div id="scrub-bar">
+        <div id="progress"></div>
+          <div id="time-display">0:00 / 0:00</div>
+    </div> 
+    </div>
+  
+<div class=sitecontent>
+  <div class=window fancy>
+<div class="title-bar-text" >frisky danger</div>
+                    <img id="pageArtwork" src="https://www.jakobutter.net/img/friskydanger.png">
+    <div id="track-list"></div>
+  <br>
+
+      <script>
+        var songs = [
+  {name: "oxygen", file: "/arkive/frisky/01oxygen.mp3", artist: "Yung Ulcer"},
+  {name: "taking my strides", file: "/arkive/frisky/02takingmystrides.mp3", artist: "Yung Ulcer"},
+  {name: "life's little hang-ups", file: "/arkive/frisky/03lifeslittlehangups.mp3", artist: "Yung Ulcer"},
+  {name: "get frisky", file: "/arkive/frisky/04getfrisky.mp3", artist: "Yung Ulcer"},
+  {name: "upsndowns", file: "/arkive/frisky/upsndowns.mp3", artist: "Yung Ulcer"},
+  {name: "calumet ave", file: "/arkive/frisky/06calumetave.mp3", artist: "Yung Ulcer"},
+  {name: "look at me now", file: "/arkive/frisky/07lookatmenow.mp3", artist: "Yung Ulcer"},
+  {name: "walking away from the light", file: "/arkive/frisky/08walkingawayfromthelight.mp3", artist: "Yung Ulcer"},
+        ];
+        </script>
+                </div>
+            </div>
+</body>
+</html>
