@@ -1,52 +1,103 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
 <head>
-<title>PINK SISSER</title>
-    <title>jakobutter.net</title>
-  <meta http-equiv="Content-Language" content="en-us">
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/02.css">
-  <link rel="icon" type="image/x-icon" href="/arkive/pinksisser.ico">
+    <title>PINK SISSER</title>
+    <link href="/style/07.css" rel="stylesheet">
+    <link href="/style/sound.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
-  <style>
-#progressBar {
-    background-color: #000000;
-}
-#progressBar div {
-    background-color: #FF0000;
-</style>
+  <script src="https://www.jakobutter.net/scripts/arkivesearch.js" defer></script>
 </head>
-<body class=pinksisser>
+   <style>
+  :root {
+    --color2: #a1f4c3C0;
+    --color4: #FFFFFF64;
+    /*background color, formerly #BCE2EB, #FF0040 */
+    --color5: #a1f4c3;
+    --color6: #00000064;
+        body {font-weight: 500; font-family:Arial}
+            #progress {
+            background-color: #FF0000
+        }
+        button {color: #000000;}
+   </style> 
+<body>
+           <div class="topwindow">
+                <a href="https://www.jakobutter.net"><h1>jakobutter.net</h1></a>
+                          <nav class="navigation-icons">
 
-<div class=thugdiv style=max-width:320px;>
-<h2>PINK SISSER</h2>
-<img id="pageArtwork" src="https://www.jakobutter.net/img/pinksisser.jpg" alt="The Yung Ulcer EP Cover Art" style="margin-bottom:40px; margin-top:30px; width:50%;">
-<br>
+    <a class="navigation-icon" href="https://www.jakobutter.net">
+        <span>music</span>
+    </a>
+	<vr></vr>            
+    <a class="navigation-icon" href="/gallery">
+        <span>gallery</span>
+    </a>
+    <vr></vr>            
+    <a class="navigation-icon" href="/entries">
+        <span>entries</span>
+    </a>
+<vr></vr> 
+<div class="dropdown">
+    <a class="navigation-icon">
+        <span>links</span>
+    </a>
+          <div class="dropdown-icons">
+    <a class="navigation-icon" href="https://youtube.com/@yungulcer"><img src="https://www.youtube.com/favicon.ico">YouTube
+    </a>
+    <a class="navigation-icon" href="https://music.apple.com/us/artist/yung-ulcer/1725588092"><img src="https://music.apple.com/assets/favicon/favicon-16.png">Apple Music
+    </a>
+    <a class="navigation-icon" href="https://www.instagram.com/yungulcr"><img src="https://www.google.com/s2/favicons?sz=16&amp;domain_url=https%3A%2F%2Finstagram.com">Instagram
+    </a>
+    <a class="navigation-icon" href="https://www.soundcloud.com/jakobutter"><img src="https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Fsoundcloud.com">SoundCloud
+    </a>
+    <a class="navigation-icon" href="https://open.spotify.com/artist/4gG6PkE4Pa3gaqCA0Ms0Zf"><img src="https://duckduckgo.com/assets/icons/favicons/spotify.png">Spotify
+    </a>
+    <a class="navigation-icon" href="https://x.com/pinksisser"><img src="//external-content.duckduckgo.com/ip3/publish.twitter.com.ico" height="16" width="16">Twitter
+    </a>
+  </div></div>
+    <vr></vr> 
+<div class="dropdown">
+  <a class="navigation-icon">
+    <span>arkive</span>
+  </a>
+  <div class="dropdown-icons" id="arkive-dropdown">
+  </div>
+</div>
+      </div>
+</div>
 
-<audio id="player" src="/arkive/pinksisser/dishonor.mp3"></audio>
-<button class=pinksisserbutton  id="prevButton" onclick="prevSong()">⏮︎</button>
-<button class=pinksisserbutton id="playPauseButton" onclick="playPause()">▶</button>
-<button class=pinksisserbutton id="nextButton" onclick="nextSong()">⏭︎</button>
-<br>
-<br>
-<div id="progressBar" class=pinksisserbar onclick="scrub(event)"><div></div></div>
-<div id="timeDisplay">0:00 / 0:00</div>
-<br>
-<br>
-<div id="songList"></div>
-<br>
-<br>
+    <div class="playa">
+    <div>
+        <button id="prev">⏮︎</button>
+        <button id="play-pause">▶</button>
+        <button id="next">⏭︎</button>
+    </div>
+          <div id="scrub-bar">
+        <div id="progress"></div>
+          <div id="time-display">0:00 / 0:00</div>
+    </div> 
+    </div>
+  
+<div class=sitecontent>
+  <div class="window fancy">
+<div class="title-bar-text" >PINK SISSER</div>
+                    <img id="pageArtwork" src="https://www.jakobutter.net/img/pinksisser.jpg">
+    <div id="track-list"></div>
+  <br>
+
 <script>
 var songs = [
-  {name: "DISHONOR", file: "/arkive/pinksisser/dishonor.mp3"},
-  {name: "WANNALINK", file: "/arkive/pinksisser/wannalink.mp3"},
-  {name: "STOP TEXTING ME", file: "/arkive/pinksisser/stoptextingme.mp3"},
-  {name: "LAUGH AT DEATH", file: "/arkive/pinksisser/laughatdeath.mp3"},
-  {name: "FLYING DUTCHMAN", file: "/arkive/pinksisser/flyingdutchman.mp3"},
-  {name: "WHOLE WORLD HATING", file: "/arkive/pinksisser/wholeworldhating.mp3"}
+  {name: "DISHONOR", file: "/arkive/pinksisser/dishonor.mp3", artist: "Yung Ulcer"},
+  {name: "WANNALINK", file: "/arkive/pinksisser/wannalink.mp3", artist: "Yung Ulcer"},
+  {name: "STOP TEXTING ME", file: "/arkive/pinksisser/stoptextingme.mp3", artist: "Yung Ulcer"},
+  {name: "LAUGH AT DEATH", file: "/arkive/pinksisser/laughatdeath.mp3", artist: "Yung Ulcer"},
+  {name: "FLYING DUTCHMAN", file: "/arkive/pinksisser/flyingdutchman.mp3", artist: "Yung Ulcer"},
+  {name: "WHOLE WORLD HATING", file: "/arkive/pinksisser/wholeworldhating.mp3", artist: "Yung Ulcer"}
 ];
 </script>
-</div>
+                </div>
+            </div>
 </body>
 </html>

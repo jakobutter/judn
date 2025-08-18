@@ -1,74 +1,80 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Our Worlds</title>
-<!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-    <title>www.jakobutter.net</title>
-    <link href="/style/06.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.jakobutter.net/style/sound.css">
+    <title>Our Worlds</title>
+    <link href="/style/07.css" rel="stylesheet">
+    <link href="/style/sound.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/arkive/ourworlds.ico">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
+  <script src="https://www.jakobutter.net/scripts/arkivesearch.js" defer></script>
 </head>
    <style>
   :root {
     --color1: #FFF78C; /*text color, formerly #E61413 */
-    --color2: #433799; /*background color, formerly #BCE2EB, #FF0040 */
+    --color2: #433799C0;
+    --color4: #45C3B5;
+    /*background color, formerly #BCE2EB, #FF0040 */
+    --color5: #433799;
+    --color6: #CE4176;
         body {font-weight: 500; font-family:handelgothic; text-shadow: -2px 0px 2px #45C3B5, 2px 0px 2px #CE4176;}
             #progress {
             background: linear-gradient(to right, #45C3B5,#45C3B5,#45C3B5, #CE4176);
         }
-    
+        button {color: #FFF78C;}
    </style> 
 <body>
-    <div class="center-container">
-        <div class="window">
-                <h2 class="title-bar-text">www.jakobutter.net</h2>
+           <div class="topwindow">
+                <a href="https://www.jakobutter.net"><h1>jakobutter.net</h1></a>
                           <nav class="navigation-icons">
 
-
-    <a class="navigation-icon" href="/releases">
-        <span>releases</span>
+    <a class="navigation-icon" href="https://www.jakobutter.net">
+        <span>music</span>
     </a>
-
-    <vr></vr>
-                  
+	<vr></vr>            
     <a class="navigation-icon" href="/gallery">
         <span>gallery</span>
     </a>
-
-    <vr></vr>
-                  
+    <vr></vr>            
     <a class="navigation-icon" href="/entries">
         <span>entries</span>
     </a>
-</nav>
-                <footer class="statusbar">
-                    <span class="statusbar-box">© New Paranormal 2025</span>
-                </footer>
+<vr></vr> 
+<div class="dropdown">
+    <a class="navigation-icon">
+        <span>links</span>
+    </a>
+          <div class="dropdown-icons">
+    <a class="navigation-icon" href="https://youtube.com/@yungulcer"><img src="https://www.youtube.com/favicon.ico">YouTube
+    </a>
+    <a class="navigation-icon" href="https://music.apple.com/us/artist/yung-ulcer/1725588092"><img src="https://music.apple.com/assets/favicon/favicon-16.png">Apple Music
+    </a>
+    <a class="navigation-icon" href="https://www.instagram.com/yungulcr"><img src="https://www.google.com/s2/favicons?sz=16&amp;domain_url=https%3A%2F%2Finstagram.com">Instagram
+    </a>
+    <a class="navigation-icon" href="https://www.soundcloud.com/jakobutter"><img src="https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Fsoundcloud.com">SoundCloud
+    </a>
+    <a class="navigation-icon" href="https://open.spotify.com/artist/4gG6PkE4Pa3gaqCA0Ms0Zf"><img src="https://duckduckgo.com/assets/icons/favicons/spotify.png">Spotify
+    </a>
+    <a class="navigation-icon" href="https://x.com/pinksisser"><img src="//external-content.duckduckgo.com/ip3/publish.twitter.com.ico" height="16" width="16">Twitter
+    </a>
+  </div></div>
+    <vr></vr> 
+<div class="dropdown">
+  <a class="navigation-icon">
+    <span>arkive</span>
+  </a>
+  <div class="dropdown-icons" id="arkive-dropdown">
+  </div>
+</div>
+      </div>
+</div>
 
-        </div>
-      <br>
-        <div class="window">
-            <div class="window-body">
-
-                <div>
-                    <div class="document-container">
-    <div class="document-cell">
-        <div class="inset">
-            <div class="document">
-                <div class="player-content">
-      
     <div class="playa">
-        <div class="cooldiv"></div><br>
     <div>
         <button id="prev">⏮︎</button>
         <button id="play-pause">▶</button>
         <button id="next">⏭︎</button>
-    </div><br>
+    </div>
           <div id="scrub-bar">
         <div id="progress"></div>
           <div id="time-display">0:00 / 0:00</div>
@@ -76,57 +82,47 @@
     </div>
   
 <div class=sitecontent>
-  <h1>Our Worlds</h1>
-                    <img class="thugimg" id="pageArtwork" src="https://www.jakobutter.net/img/ow.jpg" width="256">
-<br><br>
+  <div class="window fancy">
+<div class="title-bar-text" >Our Worlds</div>
+                    <img id="pageArtwork" src="https://www.jakobutter.net/img/ow.jpg">
     <div id="track-list"></div>
   <br>
 
 <script>
 var songs = [
-  {name: "WILLOW", file: "https://www.jakobutter.net/arkive/ourworlds/01willow.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "SKYE", file: "/arkive/ourworlds/02skye.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "NIMBUS", file: "/arkive/ourworlds/03nimbus.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "RAINLIGHT", file: "/arkive/ourworlds/04rainlight.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "FINDING TIME", file: "/arkive/ourworlds/05findingtime.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "BLEU VISTA", file: "/arkive/ourworlds/06bleuvista.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "PIERRE", file: "/arkive/ourworlds/07pierre.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "FLOWER GIRL", file: "/arkive/ourworlds/08flower.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "WANTED U", file: "/arkive/ourworlds/09you.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "SURREAL FEELING", file: "/arkive/ourworlds/10surrealfeeling.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "ANDRÉ", file: "/arkive/ourworlds/11andre.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "MEMO", file: "/arkive/ourworlds/12memo.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "IN THE SOYFIELDS", file: "/arkive/ourworlds/13inthesoyfields.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "REDROOFINN", file: "/arkive/ourworlds/14redroofinn.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "6AM", file: "/arkive/ourworlds/156am.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "KOSMO", file: "/arkive/ourworlds/16kosmo.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "TRANQUILITY", file: "/arkive/ourworlds/17tranquility.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "ROTTERDAM", file: "/arkive/ourworlds/18rotterdam.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "CAN'T REMEMBER", file: "/arkive/ourworlds/19cantremember.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "TURN THIS WAY", file: "/arkive/ourworlds/20turnthisway.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "U&ME", file: "/arkive/ourworlds/21uandm3.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "THINKING OF U", file: "/arkive/ourworlds/22thinkingofu.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "VINYL HEART", file: "/arkive/ourworlds/23vinylheart.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "GREAT SAHARA", file: "/arkive/ourworlds/24greatsahara.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "DAZED", file: "/arkive/ourworlds/25dazed.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "KINDNESS", file: "/arkive/ourworlds/26kindness.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "EMOTION 101", file: "/arkive/ourworlds/27emotion101.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "DAYDREAM", file: "/arkive/ourworlds/28daydream.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "ALL GONE", file: "/arkive/ourworlds/29allgone.mp3", artist: "Yung Ulcer", album: "Our Worlds"},
-  {name: "FINAL VOW", file: "/arkive/ourworlds/30finalvow.mp3", artist: "Yung Ulcer", album: "Our Worlds"}
+  {name: "WILLOW", file: "https://www.jakobutter.net/arkive/ourworlds/01willow.mp3", artist: "Yung Ulcer"},
+  {name: "SKYE", file: "/arkive/ourworlds/02skye.mp3", artist: "Yung Ulcer"},
+  {name: "NIMBUS", file: "/arkive/ourworlds/03nimbus.mp3", artist: "Yung Ulcer"},
+  {name: "RAINLIGHT", file: "/arkive/ourworlds/04rainlight.mp3", artist: "Yung Ulcer"},
+  {name: "FINDING TIME", file: "/arkive/ourworlds/05findingtime.mp3", artist: "Yung Ulcer"},
+  {name: "BLEU VISTA", file: "/arkive/ourworlds/06bleuvista.mp3", artist: "Yung Ulcer"},
+  {name: "PIERRE", file: "/arkive/ourworlds/07pierre.mp3", artist: "Yung Ulcer"},
+  {name: "FLOWER GIRL", file: "/arkive/ourworlds/08flower.mp3", artist: "Yung Ulcer"},
+  {name: "WANTED U", file: "/arkive/ourworlds/09you.mp3", artist: "Yung Ulcer"},
+  {name: "SURREAL FEELING", file: "/arkive/ourworlds/10surrealfeeling.mp3", artist: "Yung Ulcer"},
+  {name: "ANDRÉ", file: "/arkive/ourworlds/11andre.mp3", artist: "Yung Ulcer"},
+  {name: "MEMO", file: "/arkive/ourworlds/12memo.mp3", artist: "Yung Ulcer"},
+  {name: "IN THE SOYFIELDS", file: "/arkive/ourworlds/13inthesoyfields.mp3", artist: "Yung Ulcer"},
+  {name: "REDROOFINN", file: "/arkive/ourworlds/14redroofinn.mp3", artist: "Yung Ulcer"},
+  {name: "6AM", file: "/arkive/ourworlds/156am.mp3", artist: "Yung Ulcer"},
+  {name: "KOSMO", file: "/arkive/ourworlds/16kosmo.mp3", artist: "Yung Ulcer"},
+  {name: "TRANQUILITY", file: "/arkive/ourworlds/17tranquility.mp3", artist: "Yung Ulcer"},
+  {name: "ROTTERDAM", file: "/arkive/ourworlds/18rotterdam.mp3", artist: "Yung Ulcer"},
+  {name: "CAN'T REMEMBER", file: "/arkive/ourworlds/19cantremember.mp3", artist: "Yung Ulcer"},
+  {name: "TURN THIS WAY", file: "/arkive/ourworlds/20turnthisway.mp3", artist: "Yung Ulcer"},
+  {name: "U&ME", file: "/arkive/ourworlds/21uandm3.mp3", artist: "Yung Ulcer"},
+  {name: "THINKING OF U", file: "/arkive/ourworlds/22thinkingofu.mp3", artist: "Yung Ulcer"},
+  {name: "VINYL HEART", file: "/arkive/ourworlds/23vinylheart.mp3", artist: "Yung Ulcer"},
+  {name: "GREAT SAHARA", file: "/arkive/ourworlds/24greatsahara.mp3", artist: "Yung Ulcer"},
+  {name: "DAZED", file: "/arkive/ourworlds/25dazed.mp3", artist: "Yung Ulcer"},
+  {name: "KINDNESS", file: "/arkive/ourworlds/26kindness.mp3", artist: "Yung Ulcer"},
+  {name: "EMOTION 101", file: "/arkive/ourworlds/27emotion101.mp3", artist: "Yung Ulcer"},
+  {name: "DAYDREAM", file: "/arkive/ourworlds/28daydream.mp3", artist: "Yung Ulcer"},
+  {name: "ALL GONE", file: "/arkive/ourworlds/29allgone.mp3", artist: "Yung Ulcer"},
+  {name: "FINAL VOW", file: "/arkive/ourworlds/30finalvow.mp3", artist: "Yung Ulcer"}
 ];
 </script>
                 </div>
             </div>
-        </div>
-    </div>
-    
-</div>
-                </div>
-                
-            </div>
-        </div>
-</div>
-<br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
