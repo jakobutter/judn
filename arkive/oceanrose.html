@@ -1,70 +1,76 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Ocean Rose</title>
-<!DOCTYPE html>
 <html lang="en-us">
-
 <head>
-    <title>www.jakobutter.net</title>
-    <link href="/style/06.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.jakobutter.net/style/sound.css">
+    <title>Ocean Rose</title>
+    <link href="/style/07.css" rel="stylesheet">
+    <link href="/style/sound.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/x-icon" href="/arkive/3dsthc.ico">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
+  <script src="https://www.jakobutter.net/scripts/arkivesearch.js" defer></script>
 </head>
    <style>
   :root {
     --color1: #E2C6DB; /*text color, formerly #E61413 */
-    --color2: #2222D7; /*background color, formerly #BCE2EB, #FF0040 */
+    --color2: #2222D7C0;
+    --color4: #FFFFFF64;
+    --color5: #2222D7;/*background color, formerly #BCE2EB, #FF0040 */
+    --color6: #00000064;
         body {font-family:vcr;}
-   </style> 
+    button {color: #FFFFFF;}
+   </style>  
 <body>
-    <div class="center-container">
-        <div class="window">
-                <h2 class="title-bar-text">www.jakobutter.net</h2>
+           <div class="topwindow">
+                <a href="https://www.jakobutter.net"><h1>jakobutter.net</h1></a>
                           <nav class="navigation-icons">
 
-
-    <a class="navigation-icon" href="/releases">
-        <span>releases</span>
+    <a class="navigation-icon" href="https://www.jakobutter.net">
+        <span>music</span>
     </a>
-
-    <vr></vr>
-                  
+	<vr></vr>            
     <a class="navigation-icon" href="/gallery">
         <span>gallery</span>
     </a>
-
-    <vr></vr>
-                  
+    <vr></vr>            
     <a class="navigation-icon" href="/entries">
         <span>entries</span>
     </a>
-</nav>
-                <footer class="statusbar">
-                    <span class="statusbar-box">© New Paranormal 2025</span>
-                </footer>
+<vr></vr> 
+<div class="dropdown">
+    <a class="navigation-icon">
+        <span>links</span>
+    </a>
+          <div class="dropdown-icons">
+    <a class="navigation-icon" href="https://youtube.com/@yungulcer"><img src="https://www.youtube.com/favicon.ico">YouTube
+    </a>
+    <a class="navigation-icon" href="https://music.apple.com/us/artist/yung-ulcer/1725588092"><img src="https://music.apple.com/assets/favicon/favicon-16.png">Apple Music
+    </a>
+    <a class="navigation-icon" href="https://www.instagram.com/yungulcr"><img src="https://www.google.com/s2/favicons?sz=16&amp;domain_url=https%3A%2F%2Finstagram.com">Instagram
+    </a>
+    <a class="navigation-icon" href="https://www.soundcloud.com/jakobutter"><img src="https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Fsoundcloud.com">SoundCloud
+    </a>
+    <a class="navigation-icon" href="https://open.spotify.com/artist/4gG6PkE4Pa3gaqCA0Ms0Zf"><img src="https://duckduckgo.com/assets/icons/favicons/spotify.png">Spotify
+    </a>
+    <a class="navigation-icon" href="https://x.com/pinksisser"><img src="//external-content.duckduckgo.com/ip3/publish.twitter.com.ico" height="16" width="16">Twitter
+    </a>
+  </div></div>
+    <vr></vr> 
+<div class="dropdown">
+  <a class="navigation-icon">
+    <span>arkive</span>
+  </a>
+  <div class="dropdown-icons" id="arkive-dropdown">
+  </div>
+</div>
+      </div>
+</div>
 
-        </div>
-      <br>
-        <div class="window">
-            <div class="window-body">
-
-                <div>
-                    <div class="document-container">
-    <div class="document-cell">
-        <div class="inset">
-            <div class="document">
-                <div class="player-content">
-      
     <div class="playa">
-        <div class="cooldiv"></div><br>
     <div>
         <button id="prev">⏮︎</button>
         <button id="play-pause">▶</button>
         <button id="next">⏭︎</button>
-    </div><br>
+    </div>
           <div id="scrub-bar">
         <div id="progress"></div>
           <div id="time-display">0:00 / 0:00</div>
@@ -72,43 +78,33 @@
     </div>
   
 <div class=sitecontent>
-  <h1>Ocean Rose</h1>
-                    <img class="thugimg" id="pageArtwork" src="https://www.jakobutter.net/arkive/samasshu/oceanrose.png" width="256">
-<br><br>
+  <div class="window fancy">
+<div class="title-bar-text" >Ocean Rose</div>
+                    <img id="pageArtwork" src="https://www.jakobutter.net/arkive/samasshu/oceanrose.png">
     <div id="track-list"></div>
   <br>
 
       <script>
         var songs = [
-{name: "Youth", file: "https://www.jakobutter.net/arkive/samasshu/youth.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Flying Waves", file: "https://www.jakobutter.net/arkive/samasshu/flyingwaves.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Crushed Vibes", file: "https://www.jakobutter.net/arkive/samasshu/crushedvibes.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Barren", file: "https://www.jakobutter.net/arkive/samasshu/barren.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Fading Colors", file: "https://www.jakobutter.net/arkive/samasshu/fadingcolors.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Legacy", file: "https://www.jakobutter.net/arkive/samasshu/legacy.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Plum Skies", file: "https://www.jakobutter.net/arkive/samasshu/plumskies.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Only Want (Interlude)", file: "https://www.jakobutter.net/arkive/samasshu/onlywant.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Shimmering Plain", file: "https://www.jakobutter.net/arkive/samasshu/shimmeringplain.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Waterbells", file: "https://www.jakobutter.net/arkive/samasshu/waterbells.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Lakefront", file: "https://www.jakobutter.net/arkive/samasshu/lakefront.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Encompass", file: "https://www.jakobutter.net/arkive/samasshu/encompass.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Memory Forest", file: "https://www.jakobutter.net/arkive/samasshu/memoryforest.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Overcast", file: "https://www.jakobutter.net/arkive/samasshu/overcast.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Don't Forget", file: "https://www.jakobutter.net/arkive/samasshu/dontforget.mp3", artist: "Yung Ulcer", album: "Ocean Rose"},
-{name: "Lakefront (Original Version)", file: "https://www.jakobutter.net/arkive/samasshu/lakefrontog.mp3", artist: "Yung Ulcer", album: "Ocean Rose"}
+{name: "Youth", file: "https://www.jakobutter.net/arkive/samasshu/youth.mp3", artist: "Yung Ulcer"},
+{name: "Flying Waves", file: "https://www.jakobutter.net/arkive/samasshu/flyingwaves.mp3", artist: "Yung Ulcer"},
+{name: "Crushed Vibes", file: "https://www.jakobutter.net/arkive/samasshu/crushedvibes.mp3", artist: "Yung Ulcer"},
+{name: "Barren", file: "https://www.jakobutter.net/arkive/samasshu/barren.mp3", artist: "Yung Ulcer"},
+{name: "Fading Colors", file: "https://www.jakobutter.net/arkive/samasshu/fadingcolors.mp3", artist: "Yung Ulcer"},
+{name: "Legacy", file: "https://www.jakobutter.net/arkive/samasshu/legacy.mp3", artist: "Yung Ulcer"},
+{name: "Plum Skies", file: "https://www.jakobutter.net/arkive/samasshu/plumskies.mp3", artist: "Yung Ulcer"},
+{name: "Only Want (Interlude)", file: "https://www.jakobutter.net/arkive/samasshu/onlywant.mp3", artist: "Yung Ulcer"},
+{name: "Shimmering Plain", file: "https://www.jakobutter.net/arkive/samasshu/shimmeringplain.mp3", artist: "Yung Ulcer"},
+{name: "Waterbells", file: "https://www.jakobutter.net/arkive/samasshu/waterbells.mp3", artist: "Yung Ulcer"},
+{name: "Lakefront", file: "https://www.jakobutter.net/arkive/samasshu/lakefront.mp3", artist: "Yung Ulcer"},
+{name: "Encompass", file: "https://www.jakobutter.net/arkive/samasshu/encompass.mp3", artist: "Yung Ulcer"},
+{name: "Memory Forest", file: "https://www.jakobutter.net/arkive/samasshu/memoryforest.mp3", artist: "Yung Ulcer"},
+{name: "Overcast", file: "https://www.jakobutter.net/arkive/samasshu/overcast.mp3", artist: "Yung Ulcer"},
+{name: "Don't Forget", file: "https://www.jakobutter.net/arkive/samasshu/dontforget.mp3", artist: "Yung Ulcer"},
+{name: "Lakefront (Original Version)", file: "https://www.jakobutter.net/arkive/samasshu/lakefrontog.mp3", artist: "Yung Ulcer"}
         ];
         </script>
                 </div>
             </div>
-        </div>
-    </div>
-    
-</div>
-                </div>
-                
-            </div>
-        </div>
-</div>
-<br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>

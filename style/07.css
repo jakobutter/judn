@@ -8,6 +8,8 @@
     --deffont: simsun
 }
 @font-face { font-family: simsun; src: url('simsun.ttf'); } 
+@font-face { font-family: vhs; src: url('vhs.ttf'); } 
+@font-face { font-family: chicago; src: url('chicago.ttf'); } 
 
 body{-webkit-font-smoothing:none;
   font-size:12px;
