@@ -2,9 +2,9 @@
     --color1: #000000; /*text color*/
     --color2: #FF9BD0C0; /*window color*/
     --color3: #000000; /*bg color*/
-    --color4: #FFCEE8;/*window accent light*/
+    --color4: #FFFFFF64;/*window accent light*/
     --color5: #FF9BD0; /*window color opaque*/
-    --color6: #FF118E90;/*window accent dark*/
+    --color6: #00000064;/*window accent dark*/
     --deffont: simsun
 }
 @font-face { font-family: simsun; src: url('simsun.ttf'); } 
@@ -13,7 +13,8 @@
 @font-face { font-family: chicago; src: url('chicago.ttf'); } 
 @font-face { font-family: rodin; src: url('rodin.otf'); } 
 
-body{-webkit-font-smoothing:none;
+body{  text-rendering: geometricPrecision;
+  text-rendering: optimizeSpeed;
   font-size:12px;
    font-family: var(--deffont);
   color: var(--color1);
@@ -29,8 +30,7 @@ p{margin:3 0 0 0; padding-left:16px}
   display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 1024px; margin:auto;padding-top:64px;
 }
 
-.window{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color2), var(--color2), var(--color2));padding:6px 6px 6px 6px;max-width:288px;margin-bottom:auto}
-.window.fancy{box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4)}
+.window{background:linear-gradient(180deg, var(--color5), var(--color2), var(--color2), var(--color2));padding:6px 6px 6px 6px;max-width:288px;margin-bottom:auto;box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4)}
 
 .topwindow{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color5), var(--color2));box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); margin:0 auto; top: 0; left: 0; position: fixed; padding-left:32px; justify-content:left; text-align:left; z-index:1;
   width:100%;}
@@ -39,7 +39,8 @@ p{margin:3 0 0 0; padding-left:16px}
 .navigation-icons{display:flex;padding:2px;justify-content:left;font-size:12px;}
 .navigation-icons a{box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); margin-left:2px; margin-right:2px; padding-left:6px; padding-right:6px; background-color:var(--color5)}
 .navigation-icons a:link{color:var(--color1);text-decoration:none}
-.navigation-icon{display: block;flex-direction:column;text-align:center;height:16px;padding:4px;cursor:pointer}
+.navigation-icon{display: block;flex-direction:column;text-align:center;color: inherit;
+  text-decoration: none;height:16px;padding:4px;cursor:pointer}
 .navigation-icon.current {box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6)}
 .navigation-icon:active{box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6)}
 .drop-icons{display:flex;padding:4px;gap:8px;justify-content:left;}
