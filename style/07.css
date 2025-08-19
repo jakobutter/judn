@@ -9,8 +9,9 @@
 }
 @font-face { font-family: simsun; src: url('simsun.ttf'); } 
 @font-face { font-family: handelgothic; src: url('handelgothic.ttf'); }
-@font-face { font-family: vhs; src: url('vhs.ttf'); } 
+@font-face { font-family: vcr; src: url('vcr.ttf'); } 
 @font-face { font-family: chicago; src: url('chicago.ttf'); } 
+@font-face { font-family: papermario; src: url('papermario.ttf'); } 
 @font-face { font-family: rodin; src: url('rodin.otf'); } 
 
 body{  text-rendering: geometricPrecision;
