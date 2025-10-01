@@ -5,7 +5,9 @@
     --color4: #FFFFFF64;/*window accent light*/
     --color5: #FF9BD0; /*window color opaque*/
     --color6: #00000064;/*window accent dark*/
-    --deffont: simsun
+    --deffont: simsun;
+  --inset-light: inset 1px 1px var(--color4);
+  --inset-dark: inset -1px -1px var(--color6);
 }
 @font-face { font-family: simsun; src: url('simsun.ttf'); } 
 @font-face { font-family: handelgothic; src: url('handelgothic.ttf'); }
@@ -15,31 +17,29 @@
 @font-face { font-family: rodin; src: url('rodin.otf'); } 
 
 body{  text-rendering: geometricPrecision;
-  text-rendering: optimizeSpeed;
   font-size:12px;
-   font-family: var(--deffont);
+   font-family: var(--deffont);font-weight:500;
   color: var(--color1);
   background-image: url("https://www.jakobutter.net/img/space.png");
   background-color: var(--color3);
   background-attachment:fixed}
 
-h1{font-size:16pt;font-weight:bold;color:var(--color1); margin:0px;text-decoration:none;}
+h1{font-size:20px;font-weight:bold;color:var(--color1); margin:0px;}
+a{text-decoration-color: black;}
 img{max-width:256px;}
-p{margin:3 0 0 0; padding-left:16px}
+p { margin: 3px 0 0; padding-left: 16px; }
 
 .sitecontent{
   display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; max-width: 1024px; margin:auto;padding-top:64px;
 }
 
-.window{background:linear-gradient(180deg, var(--color5), var(--color2), var(--color2), var(--color2));padding:6px 6px 6px 6px;max-width:288px;margin-bottom:auto;box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4)}
+.window{background:linear-gradient(180deg, var(--color5), var(--color2));padding:6px;max-width:288px;margin-bottom:auto;box-shadow: var(--inset-dark), var(--inset-light);border-radius: 6px;}
 
 .topwindow{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color5), var(--color2));box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); margin:0 auto; top: 0; left: 0; position: fixed; padding-left:32px; justify-content:left; text-align:left; z-index:1;
   width:100%;}
-.title-bar-text{font-weight:bold;color:var(--color1);text-align:left;letter-spacing:0;padding:3px 3px 6px 3px;}
 
 .navigation-icons{display:flex;padding:2px;justify-content:left;font-size:12px;}
-.navigation-icons a{box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); margin-left:2px; margin-right:2px; padding-left:6px; padding-right:6px; background-color:var(--color5)}
-.navigation-icons a:link{color:var(--color1);text-decoration:none}
+.navigation-icons a{box-shadow: var(--inset-dark), var(--inset-light); margin-left:2px; margin-right:2px; padding-left:6px; padding-right:6px; background-color:var(--color5);border-radius: 6px;text-decoration:none}
 .navigation-icon{display: block;flex-direction:column;text-align:center;color: inherit;
   text-decoration: none;height:16px;padding:4px;cursor:pointer}
 .navigation-icon.current {box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6)}
