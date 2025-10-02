@@ -1,6 +1,6 @@
-.playa{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color5), var(--color2));box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); margin:0 auto; padding-top:6px; padding-bottom:6px; bottom:0px; left:0px; position: fixed; text-align:center; z-index:1;width:100%;}
+.playa{font-size:11px;background:linear-gradient(180deg, var(--color5), var(--color5), var(--color2));box-shadow: var(--inset-dark), var(--inset-light);border-radius: 6px; margin:0 auto; padding-top:6px; padding-bottom:6px; bottom:0px; left:0px; position: fixed; text-align:center; z-index:1;width:100%;}
 
-button{box-shadow:inset -1px -1px var(--color6),inset 1px 1px  var(--color4); padding:6px; margin-bottom:6px; background-color:var(--color5);height:32px;width:32px;cursor:pointer;border: none;font-size:24px;line-height:0px;text-decoration:none;}
+button{box-shadow: var(--inset-dark), var(--inset-light);border-radius: 6px; padding:6px; margin-bottom:6px; background-color:var(--color5);height:32px;width:32px;cursor:pointer;border: none;font-size:24px;line-height:0px;text-decoration:none;}
 
 button:active{box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6);}
 
@@ -10,11 +10,12 @@ button:active{box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color
 		  max-width:512px;
 display: inline-block;
             cursor: pointer;
-   box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6); background-color:var(--color5);
+   box-shadow:inset -1px -1px var(--color4),inset 1px 1px var(--color6);border-radius: 6px; background-color:var(--color5);
         }
         #progress {
             height: 100%;
                 background:var(--color6);
+          border-radius: 6px;
             width: 0;
         }
         .active {
