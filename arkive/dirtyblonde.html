@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
   <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
-  <script src="https://www.jakobutter.net/scripts/arkivesearch.js" defer></script>
 </head>
    <style>
   :root {
@@ -23,51 +22,8 @@
         }
    </style> 
 <body>
-           <div class="topwindow">
-                <a href="https://www.jakobutter.net"><h1>jakobutter.net</h1></a>
-                          <nav class="navigation-icons">
-
-    <a class="navigation-icon" href="https://www.jakobutter.net">
-        <span>music</span>
-    </a>
-	<vr></vr>            
-    <a class="navigation-icon" href="/gallery">
-        <span>gallery</span>
-    </a>
-    <vr></vr>            
-    <a class="navigation-icon" href="/entries">
-        <span>entries</span>
-    </a>
-<vr></vr> 
-<div class="dropdown">
-    <a class="navigation-icon">
-        <span>links</span>
-    </a>
-          <div class="dropdown-icons">
-    <a class="navigation-icon" href="https://youtube.com/@yungulcer"><img src="https://www.youtube.com/favicon.ico">YouTube
-    </a>
-    <a class="navigation-icon" href="https://music.apple.com/us/artist/yung-ulcer/1725588092"><img src="https://music.apple.com/assets/favicon/favicon-16.png">Apple Music
-    </a>
-    <a class="navigation-icon" href="https://www.instagram.com/yungulcr"><img src="https://www.google.com/s2/favicons?sz=16&amp;domain_url=https%3A%2F%2Finstagram.com">Instagram
-    </a>
-    <a class="navigation-icon" href="https://www.soundcloud.com/jakobutter"><img src="https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Fsoundcloud.com">SoundCloud
-    </a>
-    <a class="navigation-icon" href="https://open.spotify.com/artist/4gG6PkE4Pa3gaqCA0Ms0Zf"><img src="https://duckduckgo.com/assets/icons/favicons/spotify.png">Spotify
-    </a>
-    <a class="navigation-icon" href="https://x.com/pinksisser"><img src="//external-content.duckduckgo.com/ip3/publish.twitter.com.ico" height="16" width="16">Twitter
-    </a>
-  </div></div>
-    <vr></vr> 
-<div class="dropdown">
-  <a class="navigation-icon">
-    <span>arkive</span>
-  </a>
-  <div class="dropdown-icons" id="arkive-dropdown">
-  </div>
-</div>
-      </div>
-</div>
-
+   <div id="header"></div>
+  <script src="/scripts/include.js"></script>
     <div class="playa">
     <div>
         <button id="prev">⏮︎</button>
@@ -81,7 +37,7 @@
     </div>
   
 <div class=sitecontent>
-  <div class="window fancy">
+  <div data-bevel">
 <div class="title-bar-text" >Dirty Blonde</div>
                     <img id="pageArtwork" src="https://www.jakobutter.net/img/dirtyblonde.jpg">
     <div id="track-list"></div>
