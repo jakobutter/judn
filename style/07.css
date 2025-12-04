@@ -24,7 +24,7 @@ body{
   -webkit-font-smoothing: none;
   font-smooth: never;
   font-size:12px;
-   font-family: var(--deffont);font-weight:600;
+   font-family: var(--deffont);font-weight:500;
   color: var(--color1);
   background-image: url("https://www.jakobutter.net/img/space.png");
   background-color: var(--color3);
