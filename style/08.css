@@ -1,0 +1,30 @@
+:root {
+    --color1: #000000; /*text color*/
+    --color2: #FF9BD0; /*window color*/
+    --color3: #000000; /*background color*/
+    --color4: #FFFFFF;/* */
+    --color5: #FF9BD0; /* */
+    --color6: #000000;/* */
+}
+body{font-family:monospace;display:flex;flex-wrap:wrap;background-color:var(--color3);justify-content:center;padding-top:64px}
+
+div{display:block;background-color:var(--color2);padding:4px;margin-right:8px;margin-down:8px;border-width:1px;border-style:dotted}
+a {padding-right:8px;padding:0px}
+a:link{text-decoration:none;cursor:alias;color:var(--color1)}
+a:visited{text-decoration:none;color: var(--color1);}
+h3{text-color:var(--color1);margin:0px;border-width:0px;text-decoration:underline;font-size:20px}
+nav{border-color:black;border-width:1px;border-style:solid;background-color:var(--color2);display:inline-block;padding:2px;margin:0px;}
+nav:hover{background-color:#00000064;max-width:fit-content;cursor:help;}
+
+img {width:256px;height:auto;cursor:grab;position:relative}
+img:hover {filter: hue-rotate(180deg);}
+
+span{width: 32px;height:32px;display:inline-block;background-size: 100% 100%;}
+span:hover{filter: invert(100%);}
+
+.youtube{background-image:url("https://www.youtube.com/favicon.ico")}
+.soundcloud{background-image:url("https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Fsoundcloud.com")}
+.spotify{background-image:url("https://duckduckgo.com/assets/icons/favicons/spotify.png")}
+.applemusic{background-image:url("https://music.apple.com/assets/favicon/favicon-32.png")}
+header{background-color:var(--color2);max-width:none; width:100%;top: 0; left: 0; position: fixed; padding-left:32px; text-align:left; z-index:1;item-width: 16px}
+header span{width: 16px;height:16px}
