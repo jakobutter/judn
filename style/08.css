@@ -2,30 +2,31 @@
     --color1: #000000; /*text color*/
     --color2: #FF9BD0; /*window color*/
     --color3: #000000; /*background color*/
-    --color4: #FF0073;/*active color*/
-    --color5: #FF9BD0; /* */
-    --color6: #000000;/* */
+  --inset:inset 1px 1px #FFFFFF86, inset -1px -1px #00000086;
+  --insethover:inset 1px 1px #00000086, inset -1px -1px #FFFFFF86;
 }
-body{font-family:monospace;display:flex;flex-wrap:wrap;background-color:var(--color3);justify-content:center;padding-top:64px}
+body{font-family:monospace;display:flex;flex-wrap:wrap;align-items: flex-start;background-color:var(--color3);justify-content:center;padding-top:64px;  image-rendering: crisp-edges;-webkit-font-smoothing: none;font-smooth: never; background-image: url("https://www.jakobutter.net/img/space.png");
+  background-attachment:fixed}
+  
+header{background-color:var(--color2);max-width:none; width:100%;top: 0; left: 0; position: fixed; padding-left:32px; text-align:left; z-index:1}
+header span{width: 16px;height:16px}
 
-div{display:flexbox;background-color:var(--color2);padding:4px;margin-right:8px;margin-down:8px;border-width:1px;border-style:dotted;position:relative;justify-items:top}
-div:hover{background-color:var(--color4)}
-a {padding-right:8px;padding:0px;}
+div{display:flexbox;background-color:var(--color2);margin:4px;border-width:1px;position:relative;justify-items:top;box-shadow:var(--inset);padding:4px}
+div:hover{filter: hue-rotate(180deg);box-shadow:var(--insethover)}
+nav{box-shadow:var(--inset);border-width:1px;background-color:var(--color2);display:inline-block;padding:2px;margin:0px;}
+nav:hover{background-color:var(--color4);max-width:fit-content;cursor:help;box-shadow:var(--insethover)}
+span{width: 32px;height:32px;display:inline-block;background-size: 100% 100%;top: 0;right:0;margin-top:4px;}
+span:hover{filter: invert(100%);background-color:#FFFFFF64;box-shadow:var(--insethover)}
+
 a:link{text-decoration:none;cursor:alias;color:var(--color1);}
 a:visited{text-decoration:none;color: var(--color1);}
-h3{text-color:var(--color1);margin:0px;border-width:0px;text-decoration:underline;font-size:20px}
-nav{border-color:black;border-width:1px;border-style:solid;background-color:var(--color2);display:inline-block;padding:2px;margin:0px;}
-nav:hover{background-color:var(--color4);max-width:fit-content;cursor:help;}
+h3{text-color:var(--color1);margin:0px;padding:0px;border-width:0px;text-decoration:underline;font-size:20px}
 
 img {width:128px;height:128px;cursor:grab;position:relative;vertical-align:top}
-img:hover {filter: hue-rotate(180deg);}
-
-span{width: 32px;height:32px;display:inline-block;background-size: 100% 100%;top: 0;right:0;}
-span:hover{filter: invert(100%);background-color:#FFFFFF64;}
 
 .youtube{background-image:url("https://www.youtube.com/favicon.ico")}
 .soundcloud{background-image:url("https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Fsoundcloud.com")}
 .spotify{background-image:url("https://duckduckgo.com/assets/icons/favicons/spotify.png")}
 .applemusic{background-image:url("https://music.apple.com/assets/favicon/favicon-32.png")}
-header{background-color:var(--color2);max-width:none; width:100%;top: 0; left: 0; position: fixed; padding-left:32px; text-align:left; z-index:1;item-width: 16px}
-header span{width: 16px;height:16px}
+.instagram {background-image:url("https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Finstagram.com")}
+.twitter {background-image:url("https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Ftwitter.com")}
