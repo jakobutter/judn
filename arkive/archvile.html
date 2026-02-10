@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <title>Archvile</title>
+    <link href="/style/07.css" rel="stylesheet">
+    <link href="/style/sound.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+  <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
+  <script src="https://www.jakobutter.net/scripts/arkivesearch.js" defer></script>
+</head>
+   <style>
+  :root {
+    --color1: #FFFFFF;
+    --color2: #DB2800C0;
+    /*background color, formerly #BCE2EB, #FF0040 */
+    --color5: #DB2800;
+    --color6: #00000064;
+        body {font-weight: 500; font-family:Arial}
+            #progress {
+            background-color: #FF9A38
+        }
+        button {color: #000000;}
+   </style> 
+<body>
+   <div id="header"></div>
+  <script src="/scripts/include.js"></script>
+    <div class="playa">
+    <div>
+        <button id="prev">⏮︎</button>
+        <button id="play-pause">▶</button>
+        <button id="next">⏭︎</button>
+    </div>
+          <div id="scrub-bar">
+        <div id="progress"></div>
+          <div id="time-display">0:00 / 0:00</div>
+    </div> 
+    </div>
+  
+<div class=sitecontent>
+  <div data-bevel>
+<div class="title-bar-text" >Archvile</div>
+                    <img id="pageArtwork" src="https://www.jakobutter.net/img/archvile.png">
+    <div id="track-list"></div>
+  <br>
+
+      <script>
+        var songs = [
+  {name: "know your worth", file: "/arkive/archvile/knowyourworth.mp3", artist: "Yung Ulcer", album: "Archvile"},
+  {name: "figure 8", file: "/arkive/archvile/fig8.mp3", artist: "Yung Ulcer", album: "Archvile"},
+  {name: "pacifist", file: "/arkive/archvile/pacifist.mp3", artist: "Yung Ulcer", album: "Archvile"},
+  {name: "nothing to lose", file: "/arkive/archvile/nothingtolose.mp3", artist: "Yung Ulcer", album: "Archvile"},
+  {name: "i keep my hands sanitized, part two", file: "/arkive/frisky/ikmhsp2.mp3", artist: "Yung Ulcer", album: "Archvile"},
+  {name: "go postal", file: "/arkive/archvile/gopostal.mp3", artist: "Yung Ulcer", album: "Archvile"},
+  {name: "ulcy go brrr", file: "/arkive/archvile/ulcygobrrr.mp3", artist: "Yung Ulcer", album: "Archvile"},
+            {name: "that's how u feel", file: "/arkive/archvile/thatshowufeel.mp3", artist: "Yung Ulcer", album: "Archvile"}
+        ];
+        </script>
+                </div>
+            </div>
+</body>
+</html>
