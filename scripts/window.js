@@ -1,11 +1,3 @@
-function openPopup() {
-  document.getElementById("popup").style.display = "block";
-}
-
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
-}
-
 document.querySelectorAll('body > div').forEach(div => {
   const title = div.querySelector(':scope > a:first-child');
   if (!title) return;
