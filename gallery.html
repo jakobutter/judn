@@ -7,49 +7,25 @@
     <meta name="keywords" content="jakob utter, jakob, utter, jakobutter, jakobutter website, yung ulcer, yungulcer, legendaire">
     <meta name="description" content="music and art by Jakob Utter">
 </head>
-  <style>
-    img{width:256px;height:256px}
-  </style>
 <body>
 <script src="/scripts/include.js"></script>
-<header id="header"></header>
- 
-<div>  
- <img src="https://www.jakobutter.net/img/chains.png"> 
-</div> 
-    
-<div >  
- <img src="https://www.jakobutter.net/img/7.png"> 
-</div> 
-    
-<div >  
- <img src="https://www.jakobutter.net/img/forsale.png"> 
-</div> 
-    
-<div >  
- <img src="https://www.jakobutter.net/img/cthulu.png"> 
-</div> 
-
-<div >  
- <img src="https://www.jakobutter.net/img/fortuneteller_1.png"> 
-</div> 
-    
-<div >  
- <img src="https://www.jakobutter.net/img/winewoman.png"> 
-</div> 
-    
-<div >  
- <img src="https://www.jakobutter.net/img/fatalattraction.png"> 
-</div> 
-
-<div >  
- <img src="https://www.jakobutter.net/img/beenayear.png"> 
-</div> 
-
-<div >  
- <img src="https://www.jakobutter.net/img/archvile.png"> 
-</div>
-
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  fetch("https://api.github.com/repos/jakobutter/judn/contents/img")
+    .then(res => res.json())
+    .then(files => {
+      files
+        .filter(f => /\.(png|jpg|jpeg|gif|bmp|webp)$/i.test(f.name))
+        .forEach(f => {
+          const div = document.createElement("div");
+          const img = document.createElement("img");
+          img.src = "/img/" + f.name;
+          div.appendChild(img);
+          document.body.appendChild(div);
+        });
+    });
+});
+</script>
 </body>
 
 </html>
