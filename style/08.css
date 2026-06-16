@@ -43,6 +43,14 @@ button:active {
   box-shadow: var(--insethover);
 }
 
+#play-pause{width:32px;height:32px;font-size:24px}
+
+#scrub-bar {height: 16px;width: 75%;max-width:512px; display: inline-block; cursor: pointer; box-shadow: var(--insethover);}
+
+#progress {height: 100%;background:var(--color1);width: 0;}
+        
+.active {font-weight: bold;}
+
 .youtube{background-image:url("https://www.youtube.com/favicon.ico")}
 .soundcloud{background-image:url("https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Fsoundcloud.com")}
 .spotify{background-image:url("https://duckduckgo.com/assets/icons/favicons/spotify.png")}
