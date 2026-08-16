@@ -1,0 +1,23 @@
+[
+  {
+    "date": "20260614",
+    "title": "CLASSIC",
+    "cover": "https://i1.sndcdn.com/artworks-d0tqkfr0gSKKsco0-wolInA-t500x500.jpg",
+    "window": "#096734",
+    "youtube": "https://youtu.be/d96kAQ0nmws",
+    "soundcloud": "https://soundcloud.com/jakobutter/classic",
+    "spotify": "https://open.spotify.com/album/4mPKOhdGYeiTk8yzdttrL5",
+    "applemusic": "https://music.apple.com/us/album/classic-single/6783466681"
+  },
+  {
+    "date": "20260406",
+    "title": "DADDY",
+    "cover": "/img/daddy.png",
+    "window": "#096734",
+    "txt": "#FFFFFF",
+    "youtube": "https://youtu.be/Q-wA0_65vdI",
+    "soundcloud": "https://soundcloud.com/jakobutter/daddy",
+    "spotify": "https://open.spotify.com/album/2QcszbeJvEkhDOxCXOcPlp",
+    "applemusic": "https://music.apple.com/us/album/daddy-single/1893159208"
+  }
+]
