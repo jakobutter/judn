@@ -11,85 +11,18 @@
 <script src="/scripts/include.js"></script>
 <header id="header"></header>
 <div >
-<a>Ambitious</a><br>
-        <a href="/arkive/ambitious"> <img  src="https://www.jakobutter.net/arkive/samasshu/ambitious.png"></a>
-    </div>
-<div >
-  <a>Ethereal</a><br>
-        <a href="/arkive/ethereal"> <img  src="https://www.jakobutter.net/arkive/samasshu/ethereal.png"></a>
-    </div>
-<div >
-  <a>For Real</a><br>
-        <a href="/arkive/forreal"> <img  src="https://www.jakobutter.net/arkive/samasshu/forreal.png"></a>
-    </div>
-<div >
-  <a>Ocean Rose</a><br>
-        <a href="/arkive/oceanrose"> <img  src="https://www.jakobutter.net/arkive/samasshu/oceanrose.png"></a>
-    </div>
-<div >
-  <a>Our Worlds</a><br>
-        <a href="/arkive/ourworlds"> <img  src="https://www.jakobutter.net/img/ow.jpg"></a>
-    </div>
-    <div >
-      <a >Omen Tape</a><br>
-        <a href="/arkive/ourworlds2"> <img  src="https://www.jakobutter.net/img/ourworlds2.png"></a>
-    </div>
-    <div >
-      <a >Bad Omen</a><br>
-        <a href="/arkive/badomen"> <img  src="https://www.jakobutter.net/img/badomen.jpg"></a>
-    </div>
-    <div >
-      <a >3DS&THC</a><br>
-        <a href="/arkive/3dsandthc"> <img  src="https://www.jakobutter.net/img/3dsthc.png"></a>
-    </div>
-    <div >
-      <a >EVERGREEN</a><br>
-        <a href="/arkive/evergreen"> <img  src="https://www.jakobutter.net/img/evergreen.png"></a>
-    </div>
-    <div >
-      <a >The Yung Ulcer EP</a><br>
-        <a href="/arkive/ulcerep"> <img  src="https://www.jakobutter.net/img/yungulcerep.jpg"></a>
-    </div>
-    <div >
-      <a >Dirty Blonde</a><br>
-        <a href="/arkive/dirtyblonde"> <img  src="https://www.jakobutter.net/img/dirtyblonde.jpg"></a>
-    </div>
-    <div >
-      <a >Makayla Arkive</a><br>
-        <a href="/arkive/makaylaarkive"> <img  src="https://www.jakobutter.net/img/makayla-arkive-cover.jpg"></a>
-    </div>
-    <div >
-      <a >Anthology 1</a><br>
-        <a href="/arkive/anthology1"> <img  src="https://www.jakobutter.net/img/anthology1.png"></a>
-    </div>
-    <div >
-      <a >Teddy (Archive Collection)</a><br>
-        <a href="/arkive/teddy"> <img  src="https://www.jakobutter.net/arkive/teddy/teddy.jpg"></a>
-    </div>
-    <div >
-      <a >PINK SISSER</a><br>
-        <a href="/arkive/pinksisser"> <img  src="https://www.jakobutter.net/img/pinksisser.jpg"></a>
-    </div>
-    <div >
-      <a >CTHULU BLACKPILL</a><br>
-        <a href="/arkive/cthulu"> <img  src="https://www.jakobutter.net/img/8.png"></a>
-    </div>
-    <div >
-      <a >Legendaire</a><br>
-        <a href="/arkive/legendaire"> <img  src="https://www.jakobutter.net/img/legendaire.png"></a>
-    </div>
-    <div >
-      <a >frisky danger</a><br>
-        <a href="/arkive/friskydanger"> <img  src="https://www.jakobutter.net/img/friskydanger.png"></a>
-    </div>
-    <div>
-      <a >Weird Squad</a><br>
-        <a href="/arkive/weirdsquad"> <img  src="https://www.jakobutter.net/img/weirdsquad.png"></a>
-    </div>
-    <div>
-      <a >Digital Cummer</a><br>
-        <a href="/arkive/digitalcummer"> <img  src="https://www.jakobutter.net/img/digitalcummer.png"></a>
-    </div>
+<script>
+fetch("/arkive.json")
+  .then(res => res.json())
+  .then(releases => {
+    document.body.insertAdjacentHTML("beforeend", releases.map(r => `
+      <div style="--color1:${r.txt};--color2:${r.window}">
+        <a><strong>${r.date}</strong>&nbsp—&nbsp${r.title}</a><br>
+		<a href="${r.link}"> <img  src="${r.cover}"></a>
+      </div>
+    `).join(""));
+  });
+</script>
 </body>
 
 </html>
