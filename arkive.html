@@ -11,7 +11,7 @@
 <script src="/scripts/include.js"></script>
 <header id="header"></header>
 <script>
-fetch("/arkive.json")
+fetch("arkive.json")
   .then(res => res.json())
   .then(releases => {
     document.body.insertAdjacentHTML("beforeend", releases.map(r => `
