@@ -46,3 +46,4 @@ button:active {box-shadow: var(--insethover);}
 .twitter {background-image:url("https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Ftwitter.com")}
 
 .active {box-shadow:var(--insethover)}
+.mySlides {display: none;}
