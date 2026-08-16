@@ -11,26 +11,21 @@
 <script src="/scripts/include.js"></script>
 <header id="header"></header>
 
-<div id="releases"></div>
-
 <script>
 fetch("releases.json")
   .then(res => res.json())
   .then(releases => {
-    const container = document.getElementById("releases");
-    releases.forEach(r => {
-      container.innerHTML += `
-        <div style="--color2:${r.window};--color1:${r.txt}">
-          <a><strong>${r.date}</strong>&nbsp—&nbsp${r.title}</a><br>
-          <img src="${r.cover}"><br>
-          ${r.youtube    ? `<a href="${r.youtube}"><span class="youtube"></span></a>` : ""}
-          ${r.soundcloud ? `<a href="${r.soundcloud}"><span class="soundcloud"></span></a>` : ""}
-          ${r.spotify    ? `<a href="${r.spotify}"><span class="spotify"></span></a>` : ""}
-          ${r.applemusic ? `<a href="${r.applemusic}"><span class="applemusic"></span></a>` : ""}
-          <br>
-        </div>
-      `;
-    });
+    document.body.insertAdjacentHTML("beforeend", releases.map(r => `
+      <div style="--color1:${r.txt};--color2:${r.window}">
+        <a><strong>${r.date}</strong>&nbsp—&nbsp${r.title}</a><br>
+        <img src="${r.cover}"><br>
+        ${r.youtube    ? `<a href="${r.youtube}"><span class="youtube"></span></a>` : ""}
+        ${r.soundcloud ? `<a href="${r.soundcloud}"><span class="soundcloud"></span></a>` : ""}
+        ${r.spotify    ? `<a href="${r.spotify}"><span class="spotify"></span></a>` : ""}
+        ${r.applemusic ? `<a href="${r.applemusic}"><span class="applemusic"></span></a>` : ""}
+        <br>
+      </div>
+    `).join(""));
   });
 </script>
 
