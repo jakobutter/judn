@@ -5,6 +5,7 @@
   --inset:inset 1px 1px #FFFFFF86, inset -1px -1px #00000086;
   --insethover:inset 1px 1px #00000086, inset -1px -1px #FFFFFF86;
 }
+@font-face { font-family: simsun; src: url('simsun.ttf'); } 
 body{justify-content:center;font-family:simsun;display:flex;flex-wrap:wrap;align-items: flex-start;background-color:var(--color3);margin: 0 auto;padding-top:64px;padding-bottom:128px;  max-width: 1024px; image-rendering: crisp-edges;-webkit-font-smoothing: none;font-smooth: never; background-image: url("https://www.jakobutter.net/img/space.png");
   background-attachment:fixed}
   
