@@ -5,7 +5,7 @@
   --inset:inset 1px 1px #FFFFFF86, inset -1px -1px #00000086;
   --insethover:inset 1px 1px #00000086, inset -1px -1px #FFFFFF86;
 }
-body{justify-content:center;font-family:monospace;display:flex;flex-wrap:wrap;align-items: flex-start;background-color:var(--color3);margin: 0 auto;padding-top:64px;padding-bottom:128px;  max-width: 1024px; image-rendering: crisp-edges;-webkit-font-smoothing: none;font-smooth: never; background-image: url("https://www.jakobutter.net/img/space.png");
+body{justify-content:center;font-family:simsun;display:flex;flex-wrap:wrap;align-items: flex-start;background-color:var(--color3);margin: 0 auto;padding-top:64px;padding-bottom:128px;  max-width: 1024px; image-rendering: crisp-edges;-webkit-font-smoothing: none;font-smooth: never; background-image: url("https://www.jakobutter.net/img/space.png");
   background-attachment:fixed}
   
 header{background-color:var(--color2);max-width:none; width:100%;top: 0; left: 0; position: fixed; padding-left:32px; text-align:left; z-index:1}
@@ -26,7 +26,7 @@ a:visited{text-decoration:none;color: var(--color1);}
 h3{text-color:var(--color1);margin:0px;padding:0px;border-width:0px;text-decoration:underline;font-size:16px;display: inline;}
 a:hover{cursor:pointer;}
 
-img {width:256px;height:256px;cursor:grab;position:relative;vertical-align:top}
+img {width:256px;max-height:100%;cursor:grab;position:relative;vertical-align:top}
 
 #playa{font-size:12px;margin:0 auto; padding-top:6px; padding-bottom:6px; bottom:0px; left:0px; position: fixed; text-align:center; z-index:1;width:100%;}
 #track-list{font-size:12px}
@@ -44,3 +44,5 @@ button:active {box-shadow: var(--insethover);}
 .applemusic{background-image:url("https://music.apple.com/assets/favicon/favicon-32.png")}
 .instagram {background-image:url("https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Finstagram.com")}
 .twitter {background-image:url("https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Ftwitter.com")}
+
+.active {box-shadow:var(--insethover)}
