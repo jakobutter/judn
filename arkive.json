@@ -1,14 +1,18 @@
 [
   {
+    "date": "20260406",
     "title": "Ambitious",
     "cover": "https://www.jakobutter.net/img/arkive/ambitious.png",
     "window": "#FF9EFF",
-    "link": "/ambitious"
+	"font": "vcr",
+    "link": "/arkive/ambitious"
   },
   {
+    "date": "20260406",
     "title": "Ethereal",
     "cover": "https://www.jakobutter.net/img/arkive/ethereal.png",
     "window": "#DCC99A",
-    "link": "/ethereal"
+	"font": "vcr",
+    "link": "/arkive/ethereal"
   }
 ]
