@@ -12,7 +12,7 @@
 <header id="header"></header>
 <div >
 <script>
-fetch("arkive.json")
+fetch("/arkive.json")
   .then(res => res.json())
   .then(releases => {
     document.body.insertAdjacentHTML("beforeend", releases.map(r => `
