@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
       window.pageArtwork = document.getElementById("pageArtwork");
 
       const script = document.createElement("script");
-      script.src = "/scripts/player.js";
+      script.src = "/scripts/musicscript.js";
       document.body.appendChild(script);
     })
     .catch(err => console.error("arkive load failed:", err));
