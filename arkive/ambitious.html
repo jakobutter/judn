@@ -2,60 +2,48 @@
 <html lang="en-us">
 <head>
     <title>Ambitious</title>
-    <link href="/style/07.css" rel="stylesheet">
-    <link href="/style/sound.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style/08.css" rel="stylesheet">
+    <meta "name"="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
-  <script src="https://www.jakobutter.net/scripts/arkivesearch.js" defer></script>
+  <script src="/scripts/musicscript.js" defer></script>
 </head>
-  <style>
-:root {
-    --color1: #613BA0; /*text color*/
-    --color2: #FF9EFFC0; /*window color*/
-    --color3: #000000; /*bg color*/
-    --color4: #FFCEE8;/*window accent light*/
-    --color5: #FF9EFF; /*window color opaque*/
-    --color6: #613BA090;/*window accent dark*/
-	    --deffont: vcr
-}
-  </style>
+
 <body>
-  <div id="header"></div>
+<header id="header"></header>
   <script src="/scripts/include.js"></script>
 
-    <div class="playa">
-    <div>
+  <div id="playa">
         <button id="prev">⏮︎</button>
         <button id="play-pause">▶</button>
         <button id="next">⏭︎</button>
-    </div>
-          <div id="scrub-bar">
-        <div id="progress"></div>
-          <div id="time-display">0:00 / 0:00</div>
-    </div> 
-    </div>
-  
-<div class="sitecontent">
-  <div data-bevel>
-<div class="title-bar-text" >Ambitious</div>
-                    <img id="pageArtwork" src="https://www.jakobutter.net/arkive/samasshu/ambitious.png">
-    <div id="track-list"></div>
-  <br>
-
+<br>
+          <section id="scrub-bar">
+        <section id="progress"></section>
+          <section id="time-display">0:00 / 0:00</section>
+    </section>
+  </div>
 <script>
-        var songs = [
-{name: "Frank Says (Remix)", file: "https://www.jakobutter.net/arkive/samasshu/franksays.mp3", artist: "Yung Ulcer"},
-{name: "Robotic Purgatory", file: "https://www.jakobutter.net/arkive/samasshu/roboticpurgatory.mp3", artist: "Yung Ulcer"},
-{name: "Ramen King (Remix)", file: "https://www.jakobutter.net/arkive/samasshu/ramenking.mp3", artist: "Yung Ulcer"},
-{name: "Ambitious", file: "https://www.jakobutter.net/arkive/samasshu/ambitious.mp3", artist: "Yung Ulcer"},
-{name: "Clink Beat", file: "https://www.jakobutter.net/arkive/samasshu/clinkbeat.mp3", artist: "Yung Ulcer"},
-{name: "Dracula", file: "https://www.jakobutter.net/arkive/samasshu/dracula.mp3", artist: "Yung Ulcer"},
-{name: "Yeah Right (Remix)", file: "https://www.jakobutter.net/arkive/samasshu/yeahright.mp3", artist: "Yung Ulcer"},
-{name: "Bitter Fuck (Remix)", file: "https://www.jakobutter.net/arkive/samasshu/bitterfuck.mp3", artist: "Yung Ulcer"}
-        ];
-        </script>
-                </div>
-            </div>
+  const pageId = "ambitious";
+
+  fetch("/arkive.json")
+    .then(res => res.json())
+    .then(releases => {
+      const r = releases.find(r => r.id === pageId);
+      if (!r) return;
+
+      document.body.insertAdjacentHTML("beforeend", 
+      <div style="--color1:${r.txt};--color2:${r.window};font-family:${r.font}">
+          <a>${r.title}</a><br>
+          <img src="${r.cover}"><br>
+          <section id="track-list">
+            ${r.tracks.map((t, i) => 
+              <a>${String(i+1).padStart(2,'0')} — ${t.name}</a><br>
+            ).join("")}
+          </section>
+        </div>
+      );
+    })
+    .catch(err => console.error("arkive load failed:", err));
+</script>
 </body>
 </html>

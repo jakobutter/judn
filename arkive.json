@@ -1,14 +1,27 @@
 [
   {
-    "date": "20260406",
+    "id": "ambitious",
+    "date": "",
     "title": "Ambitious",
     "cover": "https://www.jakobutter.net/img/arkive/ambitious.png",
     "window": "#FF9EFF",
+    "txt": "#613BA0",
 	"font": "vcr",
     "link": "/arkive/ambitious"
+    "tracks": [
+{"name": "Frank Says (Remix)", "file": "/arkive/samasshu/franksays.mp3", "artist": "Yung Ulcer"},
+{"name": "Robotic Purgatory", "file": "/arkive/samasshu/roboticpurgatory.mp3", "artist": "Yung Ulcer"},
+{"name": "Ramen King (Remix)", "file": "/arkive/samasshu/ramenking.mp3", "artist": "Yung Ulcer"},
+{"name": "Ambitious", "file": "/arkive/samasshu/ambitious.mp3", "artist": "Yung Ulcer"},
+{"name": "Clink Beat", "file": "/arkive/samasshu/clinkbeat.mp3", "artist": "Yung Ulcer"},
+{"name": "Dracula", "file": "/arkive/samasshu/dracula.mp3", "artist": "Yung Ulcer"},
+{"name": "Yeah Right (Remix)", "file": "/arkive/samasshu/yeahright.mp3", "artist": "Yung Ulcer"},
+{"name": "Bitter Fuck (Remix)", "file": "/arkive/samasshu/bitterfuck.mp3", "artist": "Yung Ulcer"}
+    ]
   },
   {
-    "date": "20260406",
+	"id": "ethereal",
+    "date": "",
     "title": "Ethereal",
     "cover": "https://www.jakobutter.net/img/arkive/ethereal.png",
     "window": "#DCC99A",
