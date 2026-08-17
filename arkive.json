@@ -7,7 +7,7 @@
     "window": "#FF9EFF",
     "txt": "#613BA0",
 	"font": "vcr",
-    "link": "/arkive/ambitious"
+    "link": "/arkive/ambitious",
     "tracks": [
 {"name": "Frank Says (Remix)", "file": "/arkive/samasshu/franksays.mp3", "artist": "Yung Ulcer"},
 {"name": "Robotic Purgatory", "file": "/arkive/samasshu/roboticpurgatory.mp3", "artist": "Yung Ulcer"},
@@ -26,6 +26,14 @@
     "cover": "https://www.jakobutter.net/img/arkive/ethereal.png",
     "window": "#DCC99A",
 	"font": "vcr",
-    "link": "/arkive/ethereal"
+    "link": "/arkive/ethereal",
+	"tracks": [
+{"name": "Temporary Tranquility", "file": "/arkive/samasshu/tranquility.mp3", "artist": "Yung Ulcer"},
+{"name": "Drive Home", "file": "/arkive/samasshu/drivehome.mp3", "artist": "Yung Ulcer"},
+{"name": "Nightwalk", "file": "/arkive/samasshu/nightwalk.mp3", "artist": "Yung Ulcer"},
+{"name": "World Rooftop", "file": "/arkive/samasshu/worldrooftop.mp3", "artist": "Yung Ulcer"},
+{"name": "Ethereal", "file": "/arkive/samasshu/ethereal.mp3", "artist": "Yung Ulcer"},
+{"name": "Anniversary", "file": "/arkive/samasshu/anniversary.mp3", "artist": "Yung Ulcer"}
+    ]
   }
 ]
