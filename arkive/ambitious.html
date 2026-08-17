@@ -23,7 +23,7 @@
     </section>
   </div>
 <script>
-  const pageId = "ambitious";
+  const pageId = "dirtyblonde";
 
   fetch("/arkive.json")
     .then(res => res.json())
@@ -31,17 +31,17 @@
       const r = releases.find(r => r.id === pageId);
       if (!r) return;
 
-      document.body.insertAdjacentHTML("beforeend", 
-      <div style="--color1:${r.txt};--color2:${r.window};font-family:${r.font}">
+      document.body.insertAdjacentHTML("beforeend", `
+        <div style="--color1:${r.txt};--color2:${r.window};font-family:${r.font}"">
           <a>${r.title}</a><br>
           <img src="${r.cover}"><br>
           <section id="track-list">
-            ${r.tracks.map((t, i) => 
+            ${r.tracks.map((t, i) => `
               <a>${String(i+1).padStart(2,'0')} — ${t.name}</a><br>
-            ).join("")}
+            `).join("")}
           </section>
         </div>
-      );
+      `);
     })
     .catch(err => console.error("arkive load failed:", err));
 </script>
