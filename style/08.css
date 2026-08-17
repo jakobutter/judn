@@ -6,6 +6,11 @@
   --insethover:inset 1px 1px #00000086, inset -1px -1px #FFFFFF86;
 }
 @font-face { font-family: simsun; src: url('simsun.ttf'); } 
+@font-face { font-family: handelgothic; src: url('handelgothic.ttf'); }
+@font-face { font-family: vcr; src: url('vcr.ttf'); } 
+@font-face { font-family: chicago; src: url('chicago.ttf'); } 
+@font-face { font-family: papermario; src: url('papermario.ttf'); } 
+@font-face { font-family: rodin; src: url('rodin.otf'); } 
 body{justify-content:center;font-family:simsun;font-size:14px;display:flex;flex-wrap:wrap;align-items: flex-start;background-color:var(--color3);margin: 0 auto;padding-top:64px;padding-bottom:128px;  max-width: 1024px; image-rendering: crisp-edges;-webkit-font-smoothing: none;font-smooth: never; background-image: url("https://www.jakobutter.net/img/space.png");
   background-attachment:fixed}
   
@@ -32,7 +37,7 @@ img {width:256px;max-height:100%;cursor:grab;position:relative;vertical-align:to
 #playa{font-size:12px;margin:0 auto; padding-top:6px; padding-bottom:6px; bottom:0px; left:0px; position: fixed; text-align:center; z-index:1;width:100%;}
 #track-list{font-size:12px}
 #track-list:hover{cursor:pointer}
-button {color: var(--color1); width: 16px;height: 16px;background-color: var(--color2);box-shadow: var(--inset);border: none;padding: 0;cursor: pointer;}
+button {width: 16px;height: 16px;background-color: var(--color2);box-shadow: var(--inset);border: none;padding: 0;cursor: pointer;}
 button:active {box-shadow: var(--insethover);}
 #play-pause,#prev,#next{width:32px;height:32px;font-size:24px}
 #scrub-bar {height: 16px;width: 75%;max-width:512px; display: inline-block; cursor: pointer; box-shadow: var(--insethover);}
