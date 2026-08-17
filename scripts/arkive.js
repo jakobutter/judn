@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }));
 
       document.body.insertAdjacentHTML("beforeend", `
-        <div>
+        <div style="--color1:${r.txt};--color2:${r.window};font-family:${r.font}">
           <a>${r.title}</a><br>
           <img id="pageArtwork" src="${coverUrl}"><br>
           <section id="track-list"></section><br>
