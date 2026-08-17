@@ -35,13 +35,13 @@ document.addEventListener("DOMContentLoaded", () => {
       const scrubBar     = $('scrub-bar');
       const trackList    = $('track-list');
 
-      function setSong(index, andPlay = true) {
-        currentIndex = ((index % songs.length) + songs.length) % songs.length;
-        audio.src = songs[currentIndex].file;
-        audio.load();
-        renderTrackList();
-        if (andPlay) play();
-      }
+window.setSong = function(index, andPlay = true) {
+  currentIndex = ((index % songs.length) + songs.length) % songs.length;
+  audio.src = songs[currentIndex].file;
+  audio.load();
+  renderTrackList();
+  if (andPlay) play();
+}
 
       function play() {
         audio.play().catch(() => {});
