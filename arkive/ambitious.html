@@ -1,49 +1,26 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Ambitious</title>
-    <link href="/style/08.css" rel="stylesheet">
-    <meta "name"="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ambitious</title>
+  <link href="/style/08.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <script src="/scripts/musicscript.js" defer></script>
 </head>
-
 <body>
 <header id="header"></header>
-  <script src="/scripts/include.js"></script>
+<script src="/scripts/include.js"></script>
 
-  <div id="playa">
-        <button id="prev">⏮︎</button>
-        <button id="play-pause">▶</button>
-        <button id="next">⏭︎</button>
-<br>
-          <section id="scrub-bar">
-        <section id="progress"></section>
-          <section id="time-display">0:00 / 0:00</section>
-    </section>
-  </div>
-<script>
-  const pageId = "dirtyblonde";
+<div id="playa">
+  <button id="prev">⏮︎</button>
+  <button id="play-pause">▶</button>
+  <button id="next">⏭︎</button><br>
+  <section id="scrub-bar">
+    <section id="progress"></section>
+    <section id="time-display">0:00 / 0:00</section>
+  </section>
+</div>
 
-  fetch("/arkive.json")
-    .then(res => res.json())
-    .then(releases => {
-      const r = releases.find(r => r.id === pageId);
-      if (!r) return;
-
-      document.body.insertAdjacentHTML("beforeend", `
-        <div style="--color1:${r.txt};--color2:${r.window};font-family:${r.font}">
-          <a>${r.title}</a><br>
-          <img src="${r.cover}"><br>
-          <section id="track-list">
-            ${r.tracks.map((t, i) => `
-              <a>${String(i+1).padStart(2,'0')} — ${t.name}</a><br>
-            `).join("")}
-          </section>
-        </div>
-      `);
-    })
-    .catch(err => console.error("arkive load failed:", err));
-</script>
+<script>const pageId = "ambitious";</script>
+<script src="/scripts/arkivemanifest.js"></script>
 </body>
 </html>
