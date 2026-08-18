@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", () => {
     .then(res => res.text())
     .then(html => {
       document.getElementById("playa").innerHTML = html;
+    })
 });
+
 
 document.addEventListener("DOMContentLoaded", () => {
   fetch("/arkive.json")
