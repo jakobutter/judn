@@ -1,62 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>For Real</title>
-    <link href="/style/07.css" rel="stylesheet">
-    <link href="/style/sound.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Real</title>
+  <link href="/style/08.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
-  <script src="https://www.jakobutter.net/scripts/arkivesearch.js" defer></script>
 </head>
-   <style>
-  :root {
-    --color1: #FFFFFF;
-    --color2: #B63331C0;
-    --color4: #FFFFFF64;
-    --color5: #B63331;/*background color,
-    formerly #BCE2EB, #FF0040 */
-    --color6: #00000064;
-	    	    --deffont: papermario
-			}
-#progress {
-            background: #FFFFFF;
-        }
-         button {color: #FFFFFF;}
-   </style> 
-<body>
-   <div id="header"></div>
-  <script src="/scripts/include.js"></script>
-    <div class="playa">
-    <div>
-        <button id="prev">⏮︎</button>
-        <button id="play-pause">▶</button>
-        <button id="next">⏭︎</button>
-    </div>
-          <div id="scrub-bar">
-        <div id="progress"></div>
-          <div id="time-display">0:00 / 0:00</div>
-    </div> 
-    </div>
-  
-<div class=sitecontent>
-  <div data-bevel>
-<div class="title-bar-text" >For Real</div>
-                    <img id="pageArtwork" src="https://www.jakobutter.net/arkive/samasshu/forreal.png">
-    <div id="track-list"></div>
-  <br>
 
-      <script>
-        var songs = [
-{name: "August 25", file: "https://www.jakobutter.net/arkive/samasshu/august25.mp3", artist: "Yung Ulcer", album: "For Real"},
-{name: "Abandoned", file: "https://www.jakobutter.net/arkive/samasshu/abandoned.mp3", artist: "Yung Ulcer", album: "For Real"},
-{name: "Lover", file: "https://www.jakobutter.net/arkive/samasshu/lover.mp3", artist: "Yung Ulcer", album: "For Real"},
-{name: "Creation Room", file: "https://www.jakobutter.net/arkive/samasshu/creationroom.mp3", artist: "Yung Ulcer", album: "For Real"},
-{name: "Ambience", file: "https://www.jakobutter.net/arkive/samasshu/ambience.mp3", artist: "Yung Ulcer", album: "For Real"},
-{name: "Forgive", file: "https://www.jakobutter.net/arkive/samasshu/forgive.mp3", artist: "Yung Ulcer", album: "For Real"}
-        ];
-        </script>
-                </div>
-            </div>
+<body>
+<header id="header"></header>
+<script src="/scripts/include.js"></script>
+<div id="playa"></div>
+<script>const pageId = "forreal";</script>
+<script src="/scripts/arkive.js"></script>
 </body>
+
 </html>

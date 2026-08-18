@@ -1,87 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Our Worlds</title>
-    <link href="/style/07.css" rel="stylesheet">
-    <link href="/style/sound.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Worlds</title>
+  <link href="/style/08.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
-  <script src="https://www.jakobutter.net/scripts/arkivesearch.js" defer></script>
 </head>
-   <style>
-  :root {
-    --color1: #FFF78C; /*text color, formerly #E61413 */
-    --color2: #433799C0;
-    --color4: #45C3B5;
-    /*background color, formerly #BCE2EB, #FF0040 */
-    --color5: #433799;
-    --color6: #CE4176;
-		    	    --deffont: handelgothic
-			}
+<style>
         body {font-weight: 500; text-shadow: -2px 0px 2px #45C3B5, 2px 0px 2px #CE4176;}
             #progress {
             background: linear-gradient(to right, #45C3B5,#45C3B5,#45C3B5, #CE4176);
         }
-        button {color: #FFF78C;}
    </style> 
 <body>
-   <div id="header"></div>
-  <script src="/scripts/include.js"></script>
-    <div class="playa">
-    <div>
-        <button id="prev">⏮︎</button>
-        <button id="play-pause">▶</button>
-        <button id="next">⏭︎</button>
-    </div>
-          <div id="scrub-bar">
-        <div id="progress"></div>
-          <div id="time-display">0:00 / 0:00</div>
-    </div> 
-    </div>
-  
-<div class=sitecontent>
-  <div data-bevel>
-<div class="title-bar-text" >Our Worlds</div>
-                    <img id="pageArtwork" src="https://www.jakobutter.net/img/ow.jpg">
-    <div id="track-list"></div>
-  <br>
-
-<script>
-var songs = [
-  {name: "WILLOW", file: "https://www.jakobutter.net/arkive/ourworlds/01willow.mp3", artist: "Yung Ulcer"},
-  {name: "SKYE", file: "/arkive/ourworlds/02skye.mp3", artist: "Yung Ulcer"},
-  {name: "NIMBUS", file: "/arkive/ourworlds/03nimbus.mp3", artist: "Yung Ulcer"},
-  {name: "RAINLIGHT", file: "/arkive/ourworlds/04rainlight.mp3", artist: "Yung Ulcer"},
-  {name: "FINDING TIME", file: "/arkive/ourworlds/05findingtime.mp3", artist: "Yung Ulcer"},
-  {name: "BLEU VISTA", file: "/arkive/ourworlds/06bleuvista.mp3", artist: "Yung Ulcer"},
-  {name: "PIERRE", file: "/arkive/ourworlds/07pierre.mp3", artist: "Yung Ulcer"},
-  {name: "FLOWER GIRL", file: "/arkive/ourworlds/08flower.mp3", artist: "Yung Ulcer"},
-  {name: "WANTED U", file: "/arkive/ourworlds/09you.mp3", artist: "Yung Ulcer"},
-  {name: "SURREAL FEELING", file: "/arkive/ourworlds/10surrealfeeling.mp3", artist: "Yung Ulcer"},
-  {name: "ANDRÉ", file: "/arkive/ourworlds/11andre.mp3", artist: "Yung Ulcer"},
-  {name: "MEMO", file: "/arkive/ourworlds/12memo.mp3", artist: "Yung Ulcer"},
-  {name: "IN THE SOYFIELDS", file: "/arkive/ourworlds/13inthesoyfields.mp3", artist: "Yung Ulcer"},
-  {name: "REDROOFINN", file: "/arkive/ourworlds/14redroofinn.mp3", artist: "Yung Ulcer"},
-  {name: "6AM", file: "/arkive/ourworlds/156am.mp3", artist: "Yung Ulcer"},
-  {name: "KOSMO", file: "/arkive/ourworlds/16kosmo.mp3", artist: "Yung Ulcer"},
-  {name: "TRANQUILITY", file: "/arkive/ourworlds/17tranquility.mp3", artist: "Yung Ulcer"},
-  {name: "ROTTERDAM", file: "/arkive/ourworlds/18rotterdam.mp3", artist: "Yung Ulcer"},
-  {name: "CAN'T REMEMBER", file: "/arkive/ourworlds/19cantremember.mp3", artist: "Yung Ulcer"},
-  {name: "TURN THIS WAY", file: "/arkive/ourworlds/20turnthisway.mp3", artist: "Yung Ulcer"},
-  {name: "U&ME", file: "/arkive/ourworlds/21uandm3.mp3", artist: "Yung Ulcer"},
-  {name: "THINKING OF U", file: "/arkive/ourworlds/22thinkingofu.mp3", artist: "Yung Ulcer"},
-  {name: "VINYL HEART", file: "/arkive/ourworlds/23vinylheart.mp3", artist: "Yung Ulcer"},
-  {name: "GREAT SAHARA", file: "/arkive/ourworlds/24greatsahara.mp3", artist: "Yung Ulcer"},
-  {name: "DAZED", file: "/arkive/ourworlds/25dazed.mp3", artist: "Yung Ulcer"},
-  {name: "KINDNESS", file: "/arkive/ourworlds/26kindness.mp3", artist: "Yung Ulcer"},
-  {name: "EMOTION 101", file: "/arkive/ourworlds/27emotion101.mp3", artist: "Yung Ulcer"},
-  {name: "DAYDREAM", file: "/arkive/ourworlds/28daydream.mp3", artist: "Yung Ulcer"},
-  {name: "ALL GONE", file: "/arkive/ourworlds/29allgone.mp3", artist: "Yung Ulcer"},
-  {name: "FINAL VOW", file: "/arkive/ourworlds/30finalvow.mp3", artist: "Yung Ulcer"}
-];
-</script>
-                </div>
-            </div>
+<header id="header"></header>
+<script src="/scripts/include.js"></script>
+<div id="playa"></div>
+<script>const pageId = "ourworlds";</script>
+<script src="/scripts/arkive.js"></script>
 </body>
+
 </html>
