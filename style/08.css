@@ -10,7 +10,7 @@
 @font-face { font-family: vcr; src: url('vcr.ttf'); } 
 @font-face { font-family: chicago; src: url('chicago.ttf'); } 
 @font-face { font-family: papermario; src: url('papermario.ttf'); } 
-@font-face { font-family: rodin; src: url('rodin.otf'); } 
+@font-face { font-family: rodin; src: url('rodin.woff2'); } 
 body{justify-content:center;font-family:simsun;font-size:14px;display:flex;flex-wrap:wrap;align-items: flex-start;background-color:var(--color3);margin: 0 auto;padding-top:64px;padding-bottom:128px;  max-width: 1024px; image-rendering: crisp-edges;-webkit-font-smoothing: none;font-smooth: never; background-image: url("https://www.jakobutter.net/img/space.png");
   background-attachment:fixed}
   

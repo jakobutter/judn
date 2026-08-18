@@ -1,4 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
+  fetch("/playa.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("playa").innerHTML = html;
+});
+
+document.addEventListener("DOMContentLoaded", () => {
   fetch("/arkive.json")
     .then(res => res.json())
     .then(releases => {
