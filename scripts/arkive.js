@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div style="--color1:${r.txt};--color2:${r.window};font-family:${r.font}">
           <a>${r.title}</a><br>
           <img id="pageArtwork" src="${coverUrl}"><br>
-          <section id="track-list";style="--color1:${r.txt}"></section><br>
+          <section id="track-list"></section><br>
         </div>
       `);
 
@@ -84,7 +84,7 @@ window.setSong = function(index, andPlay = true) {
         trackList.innerHTML = songs.map((song, i) => {
           const num = String(i + 1).padStart(2, '0');
           const active = i === currentIndex;
-          return `<div class="${active ? 'active' : ''}" onclick="setSong(${i})">
+          return `<div style="--color1:${r.txt}" class="${active ? 'active' : ''}" onclick="setSong(${i})">
             <strong>${num}</strong> ${active ? `<strong>${song.name}</strong>` : song.name}
           </div>`;
         }).join('');
