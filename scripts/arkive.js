@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <div style="--color1:${r.txt};--color2:${r.window};font-family:${r.font}">
           <a>${r.title}</a><br>
           <img id="pageArtwork" src="${coverUrl}"><br>
-          <section id="track-list"></section><br>
+          <section id="track-list";style="--color1:${r.txt}"></section><br>
         </div>
       `);
 
