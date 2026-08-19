@@ -4,6 +4,7 @@
     "title": "CLASSIC",
     "cover": "https://i1.sndcdn.com/artworks-d0tqkfr0gSKKsco0-wolInA-t500x500.jpg",
     "window": "#096734",
+	"font": "simsun",
     "youtube": "https://youtu.be/d96kAQ0nmws",
     "soundcloud": "https://soundcloud.com/jakobutter/classic",
     "spotify": "https://open.spotify.com/album/4mPKOhdGYeiTk8yzdttrL5",
@@ -19,7 +20,7 @@
     "soundcloud": "https://soundcloud.com/jakobutter/daddy",
     "spotify": "https://open.spotify.com/album/2QcszbeJvEkhDOxCXOcPlp",
     "applemusic": "https://music.apple.com/us/album/daddy-single/1893159208"
-  }
+  },
   {
     "date": "20260328",
     "title": "Weird Squad",
