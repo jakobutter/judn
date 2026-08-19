@@ -1,61 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>The Yung Ulcer EP</title>
-    <link href="/style/07.css" rel="stylesheet">
-    <link href="/style/sound.css" rel="stylesheet">
-    <meta "name"="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Yung Ulcer EP</title>
+  <link href="/style/08.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <script src="/scripts/musicscript.js" defer></script>
-  <script src="/scripts/arkivesearch.js" defer></script>
 </head>
-   <style>
-  :root {
-    --color2: #B90017C0;
-    --color4: #FFFFFF64;
-    /*background color, formerly #BCE2EB, #FF0040 */
-    --color5: #B90017;
-    --color6: #00000064;
-        body {font-weight: 500; font-family:Arial}
-            #progress {
-            background-color: #FFFFFF
-        }
-        button {color: #000000;}
-   </style> 
 <body>
-   <div id="header"></div>
-  <script src="/scripts/include.js"></script>
-    <div class="playa">
-    <div>
-        <button id="prev">⏮︎</button>
-        <button id="play-pause">▶</button>
-        <button id="next">⏭︎</button>
-    </div>
-          <div id="scrub-bar">
-        <div id="progress"></div>
-          <div id="time-display">0:00 / 0:00</div>
-    </div> 
-    </div>
-  
-<div class=sitecontent>
-  <div data-bevel>
-<div class="title-bar-text" >The Yung Ulcer EP</div>
-                    <img id="pageArtwork" src="/img/yungulcerep.jpg">
-    <div id="track-list"></div>
-  <br>
-
-      <script>
-        var songs = [
-  {"name": "You Know What?", "file": "/arkive/ulcerep/what.mp3", "artist": "Yung Ulcer", album: "The Yung Ulcer EP"},
-  {"name": "Toddler", "file": "/arkive/ulcerep/toddler.mp3", "artist": "Yung Ulcer", album: "The Yung Ulcer EP"},
-  {"name": "Guilty Conscience", "file": "/arkive/ulcerep/guilty.mp3", "artist": "Yung Ulcer", album: "The Yung Ulcer EP"},
-  {"name": "Ulcer Chatter", "file": "/arkive/ulcerep/chatter.mp3", "artist": "Yung Ulcer", album: "The Yung Ulcer EP"},
-  {"name": "Austin Powers", "file": "/arkive/ulcerep/powers.mp3", "artist": "Yung Ulcer", album: "The Yung Ulcer EP"},
-  {"name": "I Keep My Hands Sanitized", "file": "/arkive/ulcerep/hands.mp3", "artist": "Yung Ulcer", album: "The Yung Ulcer EP"},
-  {"name": "Fat People", "file": "/arkive/ulcerep/people.mp3", "artist": "Yung Ulcer", album: "The Yung Ulcer EP"}
-        ];
-        </script>
-                </div>
-            </div>
+<header id="header"></header>
+<script src="/scripts/include.js"></script>
+<div id="playa"></div>
+<script>const pageId = "ulcerep";</script>
+<script src="/scripts/arkive.js"></script>
 </body>
+
 </html>
