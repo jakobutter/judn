@@ -1,61 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>CTHULU BLACKPILL</title>
-    <link href="/style/07.css" rel="stylesheet">
-    <link href="/style/sound.css" rel="stylesheet">
-    <meta "name"="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CTHULU BLACKPILL</title>
+  <link href="/style/08.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <script src="/scripts/musicscript.js" defer></script>
-  <script src="/scripts/arkivesearch.js" defer></script>
 </head>
-   <style>
-  :root {
-    --color2: #FF0073C0;
-    --color4: #FFFFFF94;
-    --color5: #FF0073;/*background color,
-    formerly #BCE2EB, #FF0040 */
-    --color6: #00000064;
-    	    --deffont: chicago
-			}
-   </style> 
-<body>
-   <div id="header"></div>
-  <script src="/scripts/include.js"></script>
-    <div class="playa">
-    <div>
-        <button id="prev">⏮︎</button>
-        <button id="play-pause">▶</button>
-        <button id="next">⏭︎</button>
-    </div>
-          <div id="scrub-bar">
-        <div id="progress"></div>
-          <div id="time-display">0:00 / 0:00</div>
-    </div> 
-    </div>
-  
-<div class=sitecontent>
-  <div data-bevel>
-<div class="title-bar-text" >CTHULU BLACKPILL</div>
-                    <img id="pageArtwork" src="/img/8.png">
-    <div id="track-list"></div>
-  <br>
 
-      <script>
-var songs = [
-  {"name": "GLOWING", "file": "/arkive/cthulu/glowing.mp3", "artist": "Yung Ulcer"},
-  {"name": "YUNG TIRE SLASHER", "file": "/arkive/cthulu/yungtireslasher.mp3"},
-  {"name": "WILDABEAST", "file": "/arkive/cthulu/wildabeast.mp3"},
-  {"name": "THESE VISIONS", "file": "/arkive/cthulu/thesevisions.mp3"},
-  {"name": "NEW BENZ", "file": "/arkive/cthulu/newbenz.mp3"},
-  {"name": "MARIJA'S SONG", "file": "/arkive/cthulu/marijassong.mp3"},
-    {"name": "COLD SPELL", "file": "/arkive/cthulu/coldspell.mp3"},
-  {"name": "GOD FORBID", "file": "/arkive/cthulu/godforbid.mp3"},
-  {"name": "LEGAL LOVE", "file": "/arkive/cthulu/legallove.mp3"},
-  {"name": "TRU HAPPINESS", "file": "/arkive/cthulu/truhappiness.mp3"}
-];
-        </script>
-                </div>
-            </div>
+<body>
+<header id="header"></header>
+<script src="/scripts/include.js"></script>
+<div id="playa"></div>
+<script>const pageId = "cthulu";</script>
+<script src="/scripts/arkive.js"></script>
 </body>
+
 </html>

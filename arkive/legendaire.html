@@ -1,58 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Legendaire</title>
-    <link href="/style/07.css" rel="stylesheet">
-    <link href="/style/sound.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legendaire</title>
+  <link href="/style/08.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
-  <script src="https://www.jakobutter.net/scripts/arkivesearch.js" defer></script>
 </head>
-     <style>
-  :root {
-    --color2: #5D6565C0;
-    --color4: #FFFFFF64;
-    --color5: #7A857B;/*background color,
-    formerly #6D7296, #6D7296 */
-    --color6: #00000064;
-			}
-           #progress {
-background-color:#B02723;
-        }
-   </style> 
-<body>
-   <div id="header"></div>
-  <script src="/scripts/include.js"></script>
-    <div class="playa">
-    <div>
-        <button id="prev">⏮︎</button>
-        <button id="play-pause">▶</button>
-        <button id="next">⏭︎</button>
-    </div>
-          <div id="scrub-bar">
-        <div id="progress"></div>
-          <div id="time-display">0:00 / 0:00</div>
-    </div> 
-    </div>
-  
-<div class=sitecontent>
-  <div data-bevel>
-<div class="title-bar-text" >Legendaire</div>
-                    <img id="pageArtwork" src="https://www.jakobutter.net/img/legendaire.png">
-    <div id="track-list"></div>
-  <br>
 
-      <script>
-        var songs = [
-  {name: "new makeover", file: "/arkive/legendaire/newmakeover.mp3", artist: "Yung Ulcer"},
-  {name: "oh she goin", file: "/arkive/legendaire/ohshegoin.mp3", artist: "Yung Ulcer"},
-  {name: "flawed by design", file: "/arkive/legendaire/flawedbydesign.mp3", artist: "Yung Ulcer"},
-  {name: "i can't please everyone", file: "/arkive/legendaire/icantpleaseeveryone.mp3", artist: "Yung Ulcer"},
-  {name: "useless!", file: "/arkive/legendaire/useless.mp3", artist: "Yung Ulcer"}
-        ];
-        </script>
-                </div>
-            </div>
+<body>
+<header id="header"></header>
+<script src="/scripts/include.js"></script>
+<div id="playa"></div>
+<script>const pageId = "legendaire";</script>
+<script src="/scripts/arkive.js"></script>
 </body>
+
 </html>

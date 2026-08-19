@@ -1,75 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Anthology 1</title>
-    <link href="/style/07.css" rel="stylesheet">
-    <link href="/style/sound.css" rel="stylesheet">
-    <meta "name"="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthology 1</title>
+  <link href="/style/08.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <script src="/scripts/musicscript.js" defer></script>
-  <script src="/scripts/arkivesearch.js" defer></script>
 </head>
-  <style>
-  :root {
-    --color1: #FFFFFFC0; /*background color*/
-    --color2: #000000C0; /*background color*/
-    --color4: #FFFFFF64;/*window accent light*/
-    --color5: #000000; /*window color opaque*/
-    --color6: #FFFFFF32;/*window accent dark*/
-}
-      #progress {
-            background: linear-gradient(45deg,#C21E0F,#439D39,#CA7730,#5D517C,#B3262F,#5D517C);
-        }
-        body {font-weight: 500; text-shadow: 0px 0.5px 2px #FFFFFF; font-weight: bold;font-family:Arial}
-    button {color: #FFFFFF;}
-  </style>
-<body>
-  <div id="header"></div>
-  <script src="/scripts/include.js"></script>
-    <div class="playa">
-    <div>
-        <button id="prev">⏮︎</button>
-        <button id="play-pause">▶</button>
-        <button id="next">⏭︎</button>
-    </div>
-          <div id="scrub-bar">
-        <div id="progress"></div>
-          <div id="time-display">0:00 / 0:00</div>
-    </div> 
-    </div>
-  
-<div class="sitecontent">
-  <div data-bevel>
-<div class="title-bar-text" >Anthology 1</div>
-                    <img id="pageArtwork" src="/img/anthology1.png">
-    <div id="track-list"></div>
-  <br>
 
-      <script>
-        var songs = [
-  {"name": "Bottom Bitch (Remix)", "file": "/arkive/anthology/bottombitch.mp3", "artist": "Yung Ulcer"},
-  {"name": "Haas", "file": "/arkive/anthology/haas.mp3", "artist": "Yung Ulcer"},
-  {"name": "Still Smoking Him", "file": "/arkive/anthology/stillsmokinghim.mp3", "artist": "Yung Ulcer"},
-  {"name": "F U Raw", "file": "/arkive/anthology/furaw.mp3", "artist": "Yung Ulcer"},
-  {"name": "004", "file": "/arkive/anthology/004.mp3", "artist": "Yung Ulcer"},
-  {"name": "Porky", "file": "/arkive/anthology/porky.mp3", "artist": "Yung Ulcer"},
-  {"name": "Beat The Case", "file": "/arkive/anthology/beatthecase.mp3", "artist": "Yung Ulcer"},
-  {"name": "Toddler (Anthology Mix)", "file": "/arkive/anthology/toddler.mp3", "artist": "Yung Ulcer"},
-  {"name": "Your Light Is Gone", "file": "/arkive/anthology/yourlightisgone.mp3", "artist": "Yung Ulcer"},
-  {"name": "High On Christmas", "file": "/arkive/anthology/highonchristmas.mp3", "artist": "Yung Ulcer"},
-  {"name": "Spiral", "file": "/arkive/anthology/spiral.mp3", "artist": "Yung Ulcer"},
-  {"name": "Jaded By Time", "file": "/arkive/anthology/jadedbytime.mp3", "artist": "Yung Ulcer"},
-  {"name": "Even Her?", "file": "/arkive/anthology/evenher.mp3", "artist": "Yung Ulcer"},
-  {"name": "High To Low", "file": "/arkive/anthology/hightolow.mp3", "artist": "Yung Ulcer"},
-  {"name": "Credits Song - From 'Adam's Pizza Quest'", "file": "/arkive/anthology/creditssong.mp3", "artist": "Yung Ulcer"},
-  {"name": "Jigglypuff", "file": "/arkive/anthology/jigglypuff.mp3", "artist": "Yung Ulcer"},
-  {"name": "Devil Interlude", "file": "/arkive/anthology/devilinterlude.mp3", "artist": "Yung Ulcer"},
-  {"name": "Pain Comes Around", "file": "/arkive/anthology/paincomesaround.mp3", "artist": "Yung Ulcer"},
-  {"name": "Catch A Drift (Anthology Mix)", "file": "/arkive/anthology/catchadrift.mp3", "artist": "Yung Ulcer"},
-  {"name": "Portals", "file": "/arkive/anthology/portals.mp3", "artist": "Yung Ulcer"}
-        ];
-        </script>
-                </div>
-            </div>
+<body>
+<header id="header"></header>
+<script src="/scripts/include.js"></script>
+<div id="playa"></div>
+<script>const pageId = "anthology1";</script>
+<script src="/scripts/arkive.js"></script>
 </body>
+
 </html>

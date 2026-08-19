@@ -1,64 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Makayla Arkive</title>
-    <link href="/style/07.css" rel="stylesheet">
-    <link href="/style/sound.css" rel="stylesheet">
-    <meta "name"="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Makayla Arkive</title>
+  <link href="/style/08.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <script src="/scripts/musicscript.js" defer></script>
-  <script src="/scripts/arkivesearch.js" defer></script>
 </head>
-   <style>
-  :root {
-    --color1: #000000; /*text color, formerly #E61413 */
-    --color2: #EEEEEEC0; /*background color, formerly #BCE2EB, #FF0040 */
-    --color4: #FFFFFF;
-    --color5: #EEEEEE;
-    --color6: #00000064;
-    
-    body{ font-family:Arial}
-      #progress {
-            background-color:#E31F08
-        }
-        body {font-weight: 500;}
-   </style>  
-<body>
-   <div id="header"></div>
-  <script src="/scripts/include.js"></script>
-    <div class="playa">
-    <div>
-        <button id="prev">⏮︎</button>
-        <button id="play-pause">▶</button>
-        <button id="next">⏭︎</button>
-    </div>
-          <div id="scrub-bar">
-        <div id="progress"></div>
-          <div id="time-display">0:00 / 0:00</div>
-    </div> 
-    </div>
-  
-<div class=sitecontent>
-  <div data-bevel>
-<div class="title-bar-text" >Makayla Arkive</div>
-                    <img id="pageArtwork" src="/img/makayla-arkive-cover.jpg">
-    <div id="track-list"></div>
-  <br>
 
-      <script>
-        var songs = [
-  {"name": "No More False Alarms", "file": "/arkive/makayla/nomorefalsealarms.mp3", "artist": "Makayla Arkive", "artist": "Makayla Arkive"},
-  {"name": "Wasting Away Pt. 1", "file": "/arkive/makayla/wastingawayp1.mp3", "artist": "Makayla Arkive"},
-  {"name": "XXX", "file": "/arkive/makayla/xxx.mp3", "artist": "Makayla Arkive"},
-  {"name": "Thru The Peephole", "file": "/arkive/makayla/thruthepeephole.mp3", "artist": "Makayla Arkive"},
-  {"name": "Just What You Like", "file": "/arkive/makayla/justwhatyoulike.mp3", "artist": "Makayla Arkive"},
-  {"name": "Paid In Full", "file": "/arkive/makayla/paidinfull.mp3", "artist": "Makayla Arkive"},
-  {"name": "Pistols", "file": "/arkive/makayla/pistols.mp3", "artist": "Makayla Arkive"},
-  {"name": "Anomaly Detected", "file": "/arkive/makayla/anomalydetected.mp3", "artist": "Makayla Arkive"},
-  {"name": "Wasting Away Pt. 2", "file": "/arkive/makayla/wastingawayp2.mp3", "artist": "Makayla Arkive"}
-        ];
-        </script>
-                </div>
-            </div>
+<body>
+<header id="header"></header>
+<script src="/scripts/include.js"></script>
+<div id="playa"></div>
+<script>const pageId = "makaylaarkive";</script>
+<script src="/scripts/arkive.js"></script>
 </body>
+
 </html>

@@ -1,78 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>Weird Squad</title>
-    <link href="/style/07.css" rel="stylesheet">
-    <link href="/style/sound.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weird Squad</title>
+  <link href="/style/08.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
-  <script src="https://www.jakobutter.net/scripts/arkivesearch.js" defer></script>
 </head>
-   <style>
-  :root {
-    --color1: #FFFFFF;
-    --color2: #42203D;
-    --color4: #FFFFFF64;
-    /*background color, formerly #BCE2EB, #FF0040 */
-    --color5: #00000080;
-    --color6: #00000064;
-        body {font-weight: 600; font-family:Arial}
-            #progress {
-            background-image: url("https://www.jakobutter.net/img/weirdsquadbg.png");background-size: 100% 100%;
-        }
-    body{
-       image-rendering: smooth;
-    }
-    .playa{
-      background-image: url("https://www.jakobutter.net/img/weirdsquadbg.png");   
-background-size: 100% 100%;
-    }
-    
-    [data-bevel] {
-  box-shadow: var(--inset-dark), var(--inset-light); padding-left:6px; padding-right:6px; padding:4px; border-radius: 6px;text-decoration:none;background-image: url("https://www.jakobutter.net/img/weirdsquadbg.png");background-size: 100% 100%;
-}
-        button {background-image: url("https://www.jakobutter.net/img/weirdsquadbg.png");
-  background-size: 100% 100%;color:#FFFFFF;}
-    
-   </style> 
-<body>
-   <div id="header"></div>
-  <script src="/scripts/include.js"></script>
-    <div class="playa">
-    <div>
-        <button id="prev">⏮︎</button>
-        <button id="play-pause">▶</button>
-        <button id="next">⏭︎</button>
-    </div>
-          <div id="scrub-bar">
-        <div id="progress"></div>
-          <div id="time-display">0:00 / 0:00</div>
-    </div> 
-    </div>
-  
-<div class=sitecontent>
-  <div data-bevel>
-<div class="title-bar-text" >Weird Squad</div>
-                    <img id="pageArtwork" src="https://www.jakobutter.net/img/weirdsquad.png">
-    <div id="track-list"></div>
-  <br>
 
-      <script>
-        var songs = [
-  {name: "The Song That Keeps Giving", file: "/arkive/weirdsquad/thesongthatkeepsgiving.mp3", artist: "Yung Ulcer", album: "Weird Squad"},
-  {name: "Designer Glaze", file: "/arkive/weirdsquad/designerglaze.mp3", artist: "Yung Ulcer", album: "Weird Squad"},
-  {name: "Gamer Gunk Pt. 2", file: "/arkive/weirdsquad/gamergunkpt2.mp3", artist: "Yung Ulcer", album: "Weird Squad"},
-  {name: "Pi$$in", file: "/arkive/weirdsquad/pissin.mp3", artist: "Yung Ulcer", album: "Weird Squad"},
-  {name: "Live to See Tomorrow", file: "/arkive/weirdsquad/livetoseetomorrow.mp3", artist: "Yung Ulcer", album: "Weird Squad"},
-  {name: "Hands Down", file: "/arkive/weirdsquad/handsdown.mp3", artist: "Yung Ulcer", album: "Weird Squad"},
-  {name: "Puppy Plays", file: "/arkive/weirdsquad/puppyplays.mp3", artist: "Yung Ulcer", album: "Weird Squad"},
-  {name: "Falling for U", file: "/arkive/weirdsquad/fallingforu.mp3", artist: "Yung Ulcer", album: "Weird Squad"},
-  {name: "Word to the Weird Squad", file: "/arkive/weirdsquad/wordtotheweirdsquad.mp3", artist: "Yung Ulcer", album: "Weird Squad"},
-  {name: "De Ruijter", file: "/arkive/weirdsquad/deruijter.mp3", artist: "Yung Ulcer", album: "Weird Squad"},
-        ];
-        </script>
-                </div>
-            </div>
+<body>
+<header id="header"></header>
+<script src="/scripts/include.js"></script>
+<div id="playa"></div>
+<script>const pageId = "weirdsquad";</script>
+<script src="/scripts/arkive.js"></script>
 </body>
+
 </html>
