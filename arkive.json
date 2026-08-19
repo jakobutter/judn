@@ -229,7 +229,7 @@
     "cover": "/img/yungulcerep.png",
     "window": "#B90017",
     "txt": "#000000",
-	"font": "",
+	"font": "Times New Roman",
     "link": "/arkive/ulcerep",
     "tracks": [
   {"name": "You Know What?", "file": "/arkive/ulcerep/what.mp3", "artist": "Yung Ulcer"},
