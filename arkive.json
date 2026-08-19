@@ -68,7 +68,7 @@
 {"name": "Flying Waves", "file": "/arkive/samasshu/flyingwaves.mp3", "artist": "Yung Ulcer"},
 {"name": "Crushed Vibes", "file": "/arkive/samasshu/crushedvibes.mp3", "artist": "Yung Ulcer"},
 {"name": "Barren", "file": "/arkive/samasshu/barren.mp3", "artist": "Yung Ulcer"},
-{"name": "Fading Colors", "file": "/arkive/samasshu/fadingcolors.mp3", "artist": "Yung Ulcer"},
+{"name": "Fading Colors", "file": "/arkive/samasshu/fadingcolors.mp3", "artist": "Yung Ulcer, Nero Rosa"},
 {"name": "Legacy", "file": "/arkive/samasshu/legacy.mp3", "artist": "Yung Ulcer"},
 {"name": "Plum Skies", "file": "/arkive/samasshu/plumskies.mp3", "artist": "Yung Ulcer"},
 {"name": "Only Want (Interlude)", "file": "/arkive/samasshu/onlywant.mp3", "artist": "Yung Ulcer"},
@@ -122,6 +122,123 @@
   {"name": "DAYDREAM", "file": "/arkive/ourworlds/28daydream.mp3", "artist": "Yung Ulcer"},
   {"name": "ALL GONE", "file": "/arkive/ourworlds/29allgone.mp3", "artist": "Yung Ulcer"},
   {"name": "FINAL VOW", "file": "/arkive/ourworlds/30finalvow.mp3", "artist": "Yung Ulcer"}
+    ]
+  },
+  {
+    "id": "badomen",
+    "date": "20191121",
+    "title": "Bad Omen",
+    "cover": "/img/badomen.png",
+    "window": "#F2D9BB",
+    "txt": "#1A1A1A",
+	"font": "simsun",
+    "link": "/arkive/badomen",
+    "tracks": [
+  {"name": "BAD OMEN", "file": "/arkive/badomen/omen.mp3", "artist": "Yung Ulcer, Lil Lemon"},
+  {"name": "KING OF THE HILL", "file": "/arkive/badomen/king.mp3", "artist": "Yung Ulcer"},
+  {"name": "HOLD ON LET GO", "file": "/arkive/badomen/letgo.mp3", "artist": "Yung Ulcer"},
+  {"name": "LIKE ME", "file": "/arkive/badomen/likeme.mp3", "artist": "Yung Ulcer"},
+  {"name": "ALIEN OG", "file": "/arkive/badomen/alien.mp3", "artist": "Yung Ulcer"},
+  {"name": "WINTER SHINES", "file": "/arkive/badomen/winter.mp3", "artist": "Yung Ulcer"},
+  {"name": "GLAD U HATE ME", "file": "/arkive/badomen/hate.mp3", "artist": "Yung Ulcer"},
+   {"name": "WHERE THE NIGHT GOES", "file": "/arkive/badomen/night.mp3", "artist": "Yung Ulcer"},
+  {"name": "THINKING ABOUT YOU", "file": "/arkive/badomen/think.mp3", "artist": "Yung Ulcer"},
+  {"name": "MEANT IT WELL", "file": "/arkive/badomen/meant.mp3", "artist": "Yung Ulcer"}
+    ]
+  },
+  {
+    "id": "omentape",
+    "date": "20200109",
+    "title": "Omen Tape",
+    "cover": "/img/arkive/omentape.png",
+    "window": "#000000",
+    "txt": "#FFFFFF",
+	"font": "handelgothic",
+    "link": "/arkive/omentape",
+    "tracks": [
+  {"name": "puff beat", "file": "/arkive/ourworlds/puffbeat.mp3", "artist": "Jakob Utter"},
+  {"name": "gymnopedie", "file": "/arkive/ourworlds/gymnopedie.mp3", "artist": "Jakob Utter"},
+  {"name": "abstract", "file": "/arkive/ourworlds/abstract.mp3", "artist": "Jakob Utter"},
+  {"name": "it's raining", "file": "/arkive/ourworlds/itsraining.mp3", "artist": "Jakob Utter"},
+  {"name": "nihilanth", "file": "/arkive/ourworlds/nihilanth.mp3", "artist": "Jakob Utter"},
+  {"name": "i don't wanna make this hard", "file": "/arkive/ourworlds/idontwannamakethishard.mp3", "artist": "Jakob Utter"},
+  {"name": "cotton candy pods", "file": "/arkive/ourworlds/cottoncandypods.mp3", "artist": "Jakob Utter"},
+  {"name": "peralia", "file": "/arkive/ourworlds/peralia.mp3", "artist": "Jakob Utter"},
+  {"name": "biking, with you", "file": "/arkive/ourworlds/bikingwithyou.mp3", "artist": "Jakob Utter"},
+  {"name": "kites", "file": "/arkive/ourworlds/kites.mp3", "artist": "Jakob Utter"}, 
+  {"name": "afraid of myself", "file": "/arkive/ourworlds/afraidofmyself.mp3", "artist": "Jakob Utter"},
+  {"name": "bleck beat", "file": "/arkive/ourworlds/bleckbeat.mp3", "artist": "Jakob Utter"},
+  {"name": "fields of something", "file": "/arkive/ourworlds/fieldsofsomething.mp3", "artist": "Jakob Utter"},
+  {"name": "woke", "file": "/arkive/ourworlds/woke.mp3", "artist": "Jakob Utter"},
+  {"name": "desert jam", "file": "/arkive/ourworlds/desertjam.mp3", "artist": "Jakob Utter"},
+  {"name": "afraid of myself pt. 2", "file": "/arkive/ourworlds/afraidofmyselfp2.mp3", "artist": "Jakob Utter"},
+  {"name": "spaceman", "file": "/arkive/ourworlds/spaceman.mp3", "artist": "Jakob Utter"},
+  {"name": "andycat", "file": "/arkive/ourworlds/andycat.mp3", "artist": "Jakob Utter"},
+  {"name": "blockheads world", "file": "/arkive/ourworlds/blockheadsworld.mp3", "artist": "Jakob Utter"},
+  {"name": "jamba beat", "file": "/arkive/ourworlds/jambabeat.mp3", "artist": "Jakob Utter"},
+  {"name": "death do us part", "file": "/arkive/ourworlds/deathdouspart.mp3", "artist": "Jakob Utter"},
+  {"name": "de ruijter", "file": "/arkive/ourworlds/deruijter.mp3", "artist": "Jakob Utter"}
+    ]
+  },
+  {
+    "id": "3dsnthc",
+    "date": "2020????",
+    "title": "3DS&THC",
+    "cover": "/img/arkive/3dsnthc.png",
+    "window": "#C3C3C3",
+    "txt": "#000000",
+	"font": "rodin",
+    "link": "/arkive/3dsandthc",
+    "tracks": [
+{"name": "Synthesis", "file": "/arkive/3dsnthc/synthesis.mp3", "artist": "Yung Ulcer"},
+{"name": "Dark Market", "file": "/arkive/3dsnthc/darkmarket.mp3", "artist": "Yung Ulcer"},
+{"name": "Interior Store", "file": "/arkive/3dsnthc/interiorstore.mp3", "artist": "Yung Ulcer"},
+{"name": "Ergosphere", "file": "/arkive/3dsnthc/ergosphere.mp3", "artist": "Yung Ulcer"},
+{"name": "HTML Jacker", "file": "/arkive/3dsnthc/htmljacker.mp3", "artist": "Yung Ulcer"},
+{"name": "Cat Mating Season", "file": "/arkive/3dsnthc/catmatingseason.mp3", "artist": "Yung Ulcer"},
+{"name": "Transcend", "file": "/arkive/3dsnthc/transcend.mp3", "artist": "Yung Ulcer"},
+{"name": "Cloud9ine", "file": "/arkive/3dsnthc/cloud9ine.mp3", "artist": "Yung Ulcer"}
+    ]
+  },
+  {
+    "id": "evergreen",
+    "date": "20201006",
+    "title": "EVERGREEN",
+    "cover": "/img/arkive/evergreen.png",
+    "window": "#000000",
+    "txt": "#FFFFFF",
+	"font": "Arial",
+    "link": "/arkive/evergreen",
+    "tracks": [
+  {"name": "Kurtis", "file": "/arkive/evergreen/kurtis.mp3"},
+  {"name": "Didgie", "file": "/arkive/evergreen/didgie.mp3"},
+  {"name": "Macintosh", "file": "/arkive/evergreen/macintosh.mp3"},
+  {"name": "Evergreen", "file": "/arkive/evergreen/evergreen.mp3"},
+  {"name": "Saint Denis", "file": "/arkive/evergreen/saint.mp3"},
+  {"name": "Time Comes Apart", "file": "/arkive/evergreen/time.mp3"},
+  {"name": "Liquid Moons", "file": "/arkive/evergreen/moon.mp3"},
+   {"name": "I Need To Know", "file": "/arkive/evergreen/know.mp3"},
+  {"name": "Wherever We Go", "file": "/arkive/evergreen/go.mp3"},
+  {"name": "On Better Days", "file": "/arkive/evergreen/days.mp3"}
+    ]
+  },
+  {
+    "id": "ulcerep",
+    "date": "20210911",
+    "title": "The Yung Ulcer EP",
+    "cover": "/img/yungulcerep.png",
+    "window": "#B90017",
+    "txt": "#000000",
+	"font": "",
+    "link": "/arkive/ulcerep",
+    "tracks": [
+  {"name": "You Know What?", "file": "/arkive/ulcerep/what.mp3", "artist": "Yung Ulcer"},
+  {"name": "Toddler", "file": "/arkive/ulcerep/toddler.mp3", "artist": "Yung Ulcer"},
+  {"name": "Guilty Conscience", "file": "/arkive/ulcerep/guilty.mp3", "artist": "Yung Ulcer"},
+  {"name": "Ulcer Chatter", "file": "/arkive/ulcerep/chatter.mp3", "artist": "Yung Ulcer"},
+  {"name": "Austin Powers", "file": "/arkive/ulcerep/powers.mp3", "artist": "Yung Ulcer"},
+  {"name": "I Keep My Hands Sanitized", "file": "/arkive/ulcerep/hands.mp3", "artist": "Yung Ulcer"},
+  {"name": "Fat People", "file": "/arkive/ulcerep/people.mp3", "artist": "Yung Ulcer"}
     ]
   }
 ]

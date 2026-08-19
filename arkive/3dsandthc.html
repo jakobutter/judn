@@ -1,61 +1,18 @@
 <!DOCTYPE html>
 <html lang="en-us">
 <head>
-    <title>3DS&THC</title>
-    <link href="/style/07.css" rel="stylesheet">
-    <link href="/style/sound.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3DS&THC</title>
+  <link href="/style/08.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <script src="https://www.jakobutter.net/scripts/musicscript.js" defer></script>
-  <script src="https://www.jakobutter.net/scripts/arkivesearch.js" defer></script>
 </head>
-  <style>
-  :root {
-    --color2: #C3C3C3C0; /*background color, formerly #BCE2EB, #FF0040 */
-    --color4: #FFFFFF;/*window accent light*/
-    --color5: #E5E5E5; /*window color opaque*/
-    --color6: #7F7F7F90;/*window accent dark*/
-        body {font-weight: 500; font-family:rodin;}
-}
-          #progress {
-            background-color:#005000
-        }
-  </style>
-<body>
-  <div id="header"></div>
-  <script src="/scripts/include.js"></script>
-    <div class="playa">
-    <div>
-        <button id="prev">⏮︎</button>
-        <button id="play-pause">▶</button>
-        <button id="next">⏭︎</button>
-    </div>
-          <div id="scrub-bar">
-        <div id="progress"></div>
-          <div id="time-display">0:00 / 0:00</div>
-    </div> 
-    </div>
-  
-<div class="sitecontent">
-  <div data-bevel>
-<div class="title-bar-text" >3DS&THC</div>
-                    <img id="pageArtwork" src="https://www.jakobutter.net/img/3dsthc.png">
-    <div id="track-list"></div>
-  <br>
 
-      <script>
-        var songs = [
-{name: "Synthesis", file: "https://www.jakobutter.net/arkive/3dsnthc/synthesis.mp3", artist: "Yung Ulcer"},
-{name: "Dark Market", file: "https://www.jakobutter.net/arkive/3dsnthc/darkmarket.mp3", artist: "Yung Ulcer"},
-{name: "Interior Store", file: "https://www.jakobutter.net/arkive/3dsnthc/interiorstore.mp3", artist: "Yung Ulcer"},
-{name: "Ergosphere", file: "https://www.jakobutter.net/arkive/3dsnthc/ergosphere.mp3", artist: "Yung Ulcer"},
-{name: "HTML Jacker", file: "https://www.jakobutter.net/arkive/3dsnthc/htmljacker.mp3", artist: "Yung Ulcer"},
-{name: "Cat Mating Season", file: "https://www.jakobutter.net/arkive/3dsnthc/catmatingseason.mp3", artist: "Yung Ulcer"},
-{name: "Transcend", file: "https://www.jakobutter.net/arkive/3dsnthc/transcend.mp3", artist: "Yung Ulcer"},
-{name: "Cloud9ine", file: "https://www.jakobutter.net/arkive/3dsnthc/cloud9ine.mp3", artist: "Yung Ulcer"}
-        ];
-        </script>
-                </div>
-            </div>
+<body>
+<header id="header"></header>
+<script src="/scripts/include.js"></script>
+<div id="playa"></div>
+<script>const pageId = "3dsnthc";</script>
+<script src="/scripts/arkive.js"></script>
 </body>
+
 </html>
