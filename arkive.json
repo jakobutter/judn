@@ -245,7 +245,7 @@
     "id": "dirtyblonde",
     "date": "20220603",
     "title": "Dirty Blonde",
-    "cover": "/img/dirtyblonde.png",
+    "cover": "/img/arkive/dirtyblonde.png",
     "window": "#E8D5B1",
     "txt": "#000000",
 	"font": "Times New Roman",
@@ -269,7 +269,7 @@
     "id": "anthology1",
     "date": "20230401",
     "title": "Anthology 1",
-    "cover": "/img/arkive/anthology1.png",
+    "cover": "/img/gal/anthology1.png",
     "window": "#000000",
     "txt": "#FFFFFF",
 	"font": "Arial",
@@ -301,7 +301,7 @@
     "id": "teddy",
     "date": "20230401",
     "title": "Teddy (Archive Collection)",
-    "cover": "/img/arkive/teddy.png",
+    "cover": "/img/arkive/teddyarchive.png",
     "window": "#5A5C82",
     "txt": "#000000",
 	"font": "Arial",
@@ -390,24 +390,7 @@
   },
   {
     "id": "legendaire",
-    "date": "20240513",
-    "title": "Legendaire",
-    "cover": "/img/legendaire.png",
-    "window": "#5D6565",
-    "txt": "#000000",
-	"font": "simsun",
-    "link": "/arkive/legendaire",
-    "tracks": [
-  {"name": "new makeover", "file": "/arkive/legendaire/newmakeover.mp3", "artist": "Yung Ulcer"},
-  {"name": "oh she goin", "file": "/arkive/legendaire/ohshegoin.mp3", "artist": "Yung Ulcer"},
-  {"name": "flawed by design", "file": "/arkive/legendaire/flawedbydesign.mp3", "artist": "Yung Ulcer"},
-  {"name": "i can't please everyone", "file": "/arkive/legendaire/icantpleaseeveryone.mp3", "artist": "Yung Ulcer"},
-  {"name": "useless!", "file": "/arkive/legendaire/useless.mp3", "artist": "Yung Ulcer"}
-    ]
-  },
-  {
-    "id": "legendaire",
-    "date": "20240513",
+    "date": "20250214",
     "title": "Legendaire",
     "cover": "/img/legendaire.png",
     "window": "#5D6565",
@@ -427,7 +410,7 @@
     "date": "2025XXXX",
     "title": "frisky danger",
     "cover": "/img/gal/friskydanger.png",
-    "window": "#42203D",
+    "window": "#AE8C59",
     "txt": "#000000",
 	"font": "simsun",
     "link": "/arkive/friskydanger",
@@ -483,7 +466,7 @@
   {"name": "PUSSY HATER TORTURER", "file": "/arkive/digitalcummer/gopostal.mp3", "artist": "Yung Ulcer"},
   {"name": "DRUNK POETRY", "file": "/arkive/digitalcummer/drunkpoetry.mp3", "artist": "Yung Ulcer"},
   {"name": "CRY OVER SPILLED TEA*", "file": "/arkive/digitalcummer/cryoverspilledtea.mp3", "artist": "Yung Ulcer"},
-  {"name": "MAD MAPPIN*", "file": "/arkive/digitalcummer/madmappin.mp3", "artist": "Yung Ulcer"},
+  {"name": "MAD MAPPIN", "file": "/arkive/digitalcummer/madmappin.mp3", "artist": "Yung Ulcer"},
   {"name": "BACK ON TRACK", "file": "/arkive/digitalcummer/backontrack.mp3", "artist": "Yung Ulcer"}
     ]
   }

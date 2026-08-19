@@ -20,4 +20,90 @@
     "spotify": "https://open.spotify.com/album/2QcszbeJvEkhDOxCXOcPlp",
     "applemusic": "https://music.apple.com/us/album/daddy-single/1893159208"
   }
+  {
+    "date": "20260328",
+    "title": "Weird Squad",
+    "cover": "/img/weirdsquad.png",
+    "window": "#B55949",
+    "txt": "#FFFFFF",
+	"font": "Arial",
+    "youtube": "https://youtube.com/playlist?list=PLxqvR8qTWlxp_RN4IxgJgPYujy-qrpG0j",
+    "soundcloud": "https://soundcloud.com/jakobutter/sets/weirdsquad",
+    "spotify": "https://open.spotify.com/album/4vyR5zBcYwKzYhBtcjxFYg",
+    "applemusic": "https://music.apple.com/us/album/weird-squad/1889343683"
+  },
+  {
+    "date": "20260111",
+    "title": "PUTEM6DEEP",
+    "cover": "https://i1.sndcdn.com/artworks-cPG0VpcSlSEucuyM-Vc5XTA-t500x500.jpg",
+    "window": "#B9A8C7",
+    "txt": "#000000",
+	"font": "simsun",
+    "youtube": "https://youtu.be/Okk53tv7l74",
+    "soundcloud": "https://soundcloud.com/jakobutter/putem6deep",
+    "spotify": "https://open.spotify.com/track/5Aem4upkRvV4C1bhgnZc7Z",
+    "applemusic": "https://music.apple.com/us/album/putem6deep/1868668233"
+  },
+  {
+    "date": "20251209",
+    "title": "SAY HI",
+    "cover": "/img/sayhi.png",
+    "window": "#000808",
+    "txt": "#FFFFFF",
+	"font": "simsun",
+    "youtube": "https://www.youtube.com/watch?v=GVJatcEirgU",
+    "soundcloud": "https://soundcloud.com/jakobutter/sayhi",
+    "spotify": "https://open.spotify.com/album/3IFLZB79H9IS7qR5GOAz7V",
+    "applemusic": "https://music.apple.com/us/album/say-hi-single/1874391951"
+  },
+  {
+    "date": "20250801",
+    "title": "nothing to lose",
+    "cover": "https://i1.sndcdn.com/artworks-WB4RiWZPG1g9Tdnl-94GoTA-t1080x1080.png",
+    "window": "#B53220",
+    "txt": "#000000",
+	"font": "simsun",
+    "youtube": "https://www.youtube.com/watch?v=Ixx-IGXMb4U",
+    "soundcloud": "https://soundcloud.com/jakobutter/nothing-to-lose",
+    "spotify": "https://open.spotify.com/track/0WADttbzeilzEuKuozAvD7",
+    "applemusic": "https://music.apple.com/us/album/nothing-to-lose-single/1874389800"
+  },
+  {
+    "date": "20250214",
+    "title": "Legendaire",
+    "cover": "/img/legendaire.png",
+    "window": "#5D6565",
+    "txt": "#000000",
+	"font": "simsun",
+    "youtube": "https://youtube.com/playlist?list=PLxqvR8qTWlxr3HC2GQWS1rLetul-HADwk",
+    "soundcloud": "https://soundcloud.com/jakobutter/sets/legendaire",
+    "spotify": "https://open.spotify.com/album/6i20BZaL81iotkQrUNQUpz",
+    "applemusic": "https://music.apple.com/us/album/legendaire-ep/1821673631"
+  },
+  {
+    "id": "cthulu",
+    "date": "20240513",
+    "title": "CTHULU BLACKPILL",
+    "cover": "/img/cthulublackpill.png",
+    "window": "#ff0073",
+    "txt": "#000000",
+	"font": "chicago",
+    "youtube": "https://youtube.com/playlist?list=PLxqvR8qTWlxqitr8iqDjCS5y8I9JUysYB",
+    "soundcloud": "https://soundcloud.com/jakobutter/sets/cthulu-blackpill",
+    "spotify": "https://open.spotify.com/album/4mDXQrDvLqummu24Dl2XX7",
+    "applemusic": "https://music.apple.com/us/album/cthulu-blackpill/1820787131"
+  },
+  {
+    "id": "pinksisser",
+    "date": "20240110",
+    "title": "PINK SISSER",
+    "cover": "/img/pinksisser.png",
+    "window": "#a1f4c3",
+    "txt": "#000000",
+	"font": "Arial",
+    "youtube": "https://music.apple.com/us/album/cthulu-blackpill/1820787131",
+    "soundcloud": "https://www.soundcloud.com/jakobutter/sets/pinksisser",
+    "spotify": "https://open.spotify.com/album/5cy1QeGs2ai8PPnF6lAfKZ",
+    "applemusic": "https://music.apple.com/us/album/pink-sisser-ep/1820747827"
+  }
 ]

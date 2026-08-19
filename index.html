@@ -16,7 +16,7 @@ fetch("releases.json")
   .then(res => res.json())
   .then(releases => {
     document.body.insertAdjacentHTML("beforeend", releases.map(r => `
-      <div style="--color1:${r.txt};--color2:${r.window}">
+      <div style="--color1:${r.txt};--color2:${r.window};font-family:${r.font}">
         <a><strong>${r.date}</strong>&nbsp—&nbsp${r.title}</a><br>
         <img src="${r.cover}"><br>
         ${r.youtube    ? `<a href="${r.youtube}"><span class="youtube"></span></a>` : ""}
