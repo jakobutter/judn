@@ -82,7 +82,16 @@
     "applemusic": "https://music.apple.com/us/album/legendaire-ep/1821673631"
   },
   {
-    "id": "cthulu",
+    "date": "20250211",
+    "title": "CARTNITE",
+    "cover": "/img/cartnite.png",
+    "window": "#998D68",
+    "txt": "#000000",
+    "youtube": "https://youtu.be/H0VZAlUQu9Y",
+    "spotify": "https://open.spotify.com/album/35s9BAHo6hYXNwi9SJBuPb",
+    "applemusic": "https://music.apple.com/us/album/cartnite-single/6807270507"
+  },
+  {
     "date": "20240513",
     "title": "CTHULU BLACKPILL",
     "cover": "/img/cthulublackpill.png",
