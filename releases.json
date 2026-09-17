@@ -1,14 +1,24 @@
 [
+ {
+    "date": "2026XXXX",
+    "title": "█████",
+    "cover": "/img/new.gif",
+    "window": "#f2f2f2",
+    "youtube": "https://youtu.be/d96kAQ0nmws",
+    "soundcloud": "https://soundcloud.com/jakobutter/classic",
+    "spotify": "https://open.spotify.com/album/4mPKOhdGYeiTk8yzdttrL5",
+    "applemusic": "https://music.apple.com/us/album/classic-single/6783466681"
+  },
   {
     "date": "20260614",
     "title": "CLASSIC",
     "cover": "https://i1.sndcdn.com/artworks-d0tqkfr0gSKKsco0-wolInA-t500x500.jpg",
     "window": "#096734",
-	"font": "simsun",
-    "youtube": "https://youtu.be/d96kAQ0nmws",
-    "soundcloud": "https://soundcloud.com/jakobutter/classic",
-    "spotify": "https://open.spotify.com/album/4mPKOhdGYeiTk8yzdttrL5",
-    "applemusic": "https://music.apple.com/us/album/classic-single/6783466681"
+	"txt": "#FF0073",
+    "youtube": "",
+    "soundcloud": "",
+    "spotify": "",
+    "applemusic": ""
   },
   {
     "date": "20260406",
