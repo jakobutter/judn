@@ -50,7 +50,7 @@ button:active {box-shadow: var(--insethover);}
 .applemusic{background-image:url("https://music.apple.com/assets/favicon/favicon-32.png")}
 .instagram {background-image:url("https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Finstagram.com")}
 .twitter {background-image:url("https://www.google.com/s2/favicons?sz=16&domain_url=https%3A%2F%2Ftwitter.com")}
-.steam {background-image:url("https://github.com/teapotsoftware/teapotsoftware.github.io/blob/main/stuff/steam.png")}
+.steam {background-image:url("https://teapotsoftware.github.io/stuff/steam.png")}
 
 .active {box-shadow:var(--insethover)}
 .mySlides {display: none;}
