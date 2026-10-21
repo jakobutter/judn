@@ -56,3 +56,29 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 } 
+
+let panels = [];
+
+fetch("/panels.json")
+  .then(res => res.json())
+  .then(data => { panels = data; });
+
+function openPopup(id) {
+  const panel = panels.find(p => p.id === id);
+  if (!panel) return;
+  const existing = document.getElementById("active-popup");
+  if (existing) existing.remove();
+  const div = document.createElement("div");
+  div.id = "active-popup";
+  div.style = "display:block; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:999";
+  div.innerHTML = `
+    <button onclick="closePopup()" style="position:absolute; top:2px; right:2px">x</button>
+    ${panel.content}
+  `;
+  document.body.appendChild(div);
+}
+
+function closePopup() {
+  const el = document.getElementById("active-popup");
+  if (el) el.remove();
+}
