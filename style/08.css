@@ -30,7 +30,7 @@ nav:active{background-color:var(--color4);box-shadow:var(--insethover)}
 span{width: 32px;height:32px;display:inline-block;background-size: 100% 100%;top: 0;right:0;margin-top:4px;z-index:2}
 span:hover{filter: invert(100%);background-color:#FFFFFF64;box-shadow:var(--insethover)}
 
-a{color:var(--color1);}
+a{color:var(--color1);z-index:2}
 a:link{text-decoration:none;cursor:alias;color:var(--color1);}
 a:visited{text-decoration:none;color: var(--color1);}
 h3{text-color:var(--color1);margin:0px;padding:0px;border-width:0px;text-decoration:underline;font-size:16px;display: inline;}
