@@ -1,10 +1,10 @@
 :root {
+    --deffont: helvetica; /*default font*/
     --color1: #000000; /*text color*/
     --color2: #FF9BD0; /*window color*/
     --color3: #000000; /*background color*/
   --inset:inset 1px 1px #FFFFFF86, inset -1px -1px #00000086;
   --insethover:inset 1px 1px #00000086, inset -1px -1px #FFFFFF86;
-  --deffont: helvetica
 }
 @font-face { font-family: simsun; src: url('simsun.ttf'); } 
 @font-face { font-family: handelgothic; src: url('handelgothic.ttf'); }
@@ -13,33 +13,35 @@
 @font-face { font-family: papermario; src: url('papermario.ttf'); } 
 @font-face { font-family: rodin; src: url('rodin.woff2'); } 
 @font-face { font-family: helvetica; src: url('helvetica.ttf'); } 
-body{justify-content:center;font-family:var(--deffont);font-size:14px;display:flex;flex-wrap:wrap;align-items: flex-start;background-color:var(--color3);margin: 0 auto;padding-top:64px;padding-bottom:128px;  max-width: 1024px; image-rendering: crisp-edges;-webkit-font-smoothing: none;font-smooth: never; background-image: url("https://www.jakobutter.net/img/space.png");
+
+body{justify-content:center;font-family:var(--deffont);font-size:14px;letter-spacing: 1px;display:flex;flex-wrap:wrap;align-items: flex-start;background-color:var(--color3);margin: 0 auto;padding-top:64px;padding-bottom:128px;  max-width: 1024px; image-rendering: crisp-edges;-webkit-font-smoothing: none;font-smooth: never; background-image: url("https://www.jakobutter.net/img/space.png");
   background-attachment:fixed}
   
-header{background-color:var(--color2);max-width:none; width:100%;top: 0; left: 0; position: fixed; padding-left:32px; text-align:left; z-index:1}
+header{background-color:var(--color2);max-width:none; width:100%;top: 0; left: 0; position: fixed; padding-left:32px; text-align:left; z-index:3}
 header span{width: 16px;height:16px}
 
-div{color:var(--color1);display:flexbox;background-color:var(--color2);margin:4px;border-width:1px;position:relative;justify-items:top;box-shadow:var(--inset);padding:4px}
+div{color:var(--color1);display:flexbox;background-color:var(--color2);margin:4px;border-radius:6px;border-width:1px;position:relative;justify-items:top;box-shadow:var(--inset);padding:4px}
+div::before {content: '';position: absolute;top: 0;left: 0; width: 100%;height: 100%;background: linear-gradient(#00000000, #00000064);pointer-events: none; z-index: 1;}
 div.collapsed > *:not(:first-child) { display: none; }
 
-nav{box-shadow:var(--inset);border-width:1px;background-color:var(--color2);display:inline-block;padding:2px;margin:0px;}
+nav{box-shadow:var(--inset);border-width:1px;border-radius:6px;background-color:var(--color2);display:inline-block;padding:2px;margin:0px;z-index:2}
 nav:hover{max-width:fit-content;cursor:help;}
 nav:active{background-color:var(--color4);box-shadow:var(--insethover)}
-span{width: 32px;height:32px;display:inline-block;background-size: 100% 100%;top: 0;right:0;margin-top:4px;}
+span{width: 32px;height:32px;display:inline-block;background-size: 100% 100%;top: 0;right:0;margin-top:4px;z-index:2}
 span:hover{filter: invert(100%);background-color:#FFFFFF64;box-shadow:var(--insethover)}
 
-a{color:var(--color1);}
+a{color:var(--color1);z-index:2}
 a:link{text-decoration:none;cursor:alias;color:var(--color1);}
 a:visited{text-decoration:none;color: var(--color1);}
 h3{text-color:var(--color1);margin:0px;padding:0px;border-width:0px;text-decoration:underline;font-size:16px;display: inline;}
 a:hover{cursor:pointer;}
 
-img {width:256px;max-height:100%;cursor:grab;position:relative;vertical-align:top}
+img {width:256px;max-height:100%;cursor:grab;position:relative;vertical-align:top;z-index:2}
 
-#playa{font-size:12px;margin:0 auto; padding-top:6px; padding-bottom:6px; bottom:0px; left:0px; position: fixed; text-align:center; z-index:1;width:100%;}
+#playa{font-size:12px;margin:0 auto; padding-top:6px; padding-bottom:6px; bottom:0px; left:0px; position: fixed; text-align:center; z-index:3;width:100%;}
 #track-list{font-size:12px}
 #track-list:hover{cursor:pointer}
-button {color:var(--color1); width: 16px;height: 16px;background-color: var(--color2);box-shadow: var(--inset);border: none;padding: 0;cursor: pointer;}
+button {color:var(--color1); width: 16px;height: 16px;background-color: var(--color2);box-shadow: var(--inset);border: none;border-radius:4px;padding: 0;cursor: pointer;z-index:2}
 button:active {box-shadow: var(--insethover);}
 #play-pause,#prev,#next{width:32px;height:32px;font-size:24px}
 #scrub-bar {height: 16px;width: 75%;max-width:512px; display: inline-block; cursor: pointer; box-shadow: var(--insethover);}
