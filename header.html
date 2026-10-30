@@ -1,34 +1,36 @@
 <html lang="en-us">
 <body> 
 <script>
-function openPopup() {
-  document.getElementById("popup").style.display = "block";
+function openHeaderPopup() {
+  const popup = document.getElementById("popup");
+  if (popup) popup.style.display = "block";
 }
-function closePopup() {
-  document.getElementById("popup").style.display = "none";
+function closeHeaderPopup() {
+  const popup = document.getElementById("popup");
+  if (popup) popup.style.display = "none";
 }
 </script>
-<h3><a href="https://www.jakobutter.net">jakobutter.net</a></h3> <button onclick="openPopup()">i</button>
-	<div id="popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:999">
+<h3><a href="https://www.jakobutter.net">jakobutter.net</a></h3> <button onclick="openHeaderPopup()">i</button>
+ 	<div id="popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:999">
   <a><strong>jakobutter.net</strong></a>
-   <button onclick="closePopup()" style="position:absolute; top:2px; right:2px">x</button>
+    <button onclick="closeHeaderPopup()" style="position:absolute; top:2px; right:2px">x</button>
   <br>
   <a>created by Jakob Utter</a><br><br>
   <a>last modified&nbsp—&nbsp</a><strong><a id="pagedate"></strong></a><br>
 <a>site created&nbsp&nbsp—&nbsp</a><strong><a>20210805</strong></a>
 </div>
-	
+ 	
 
   <a href="https://youtube.com/@yungulcer"><span class="youtube"></span></a>
-
+ 
 <a href="https://www.soundcloud.com/jakobutter"><span class="soundcloud"></span></a>
-
+ 
 <a href="https://open.spotify.com/artist/4gG6PkE4Pa3gaqCA0Ms0Zf"><span class="spotify"></span></a>
-
+ 
             <a href="https://music.apple.com/us/artist/yung-ulcer/1725588092"><span class="applemusic"></span></a>
-         
+          
             <a href="https://www.instagram.com/yungulcy"><span class="instagram"></span></a>
-         
+          
             <a href="https://x.com/pinksisser"><span class="twitter"></span></a>
 			
 			<a href="https://steamcommunity.com/id/yungulcer"><span class="steam"></span></a>
@@ -42,6 +44,6 @@ function closePopup() {
 <nav>
   <a href="/entries">&nbspentries&nbsp</a>
 </nav>
-              
+               
 </body>
 </html>
