@@ -9,6 +9,18 @@ function closeHeaderPopup() {
   const popup = document.getElementById("popup");
   if (popup) popup.style.display = "none";
 }
+
+window.updateHeaderDate = function() {
+  const pagedate = document.getElementById("pagedate");
+  if (!pagedate) return;
+
+  const d = new Date(document.lastModified);
+  const fmt = d.getFullYear().toString() +
+    (d.getMonth()+1).toString().padStart(2,'0') +
+    d.getDate().toString().padStart(2,'0');
+
+  pagedate.textContent = fmt;
+};
 </script>
 <h3><a href="https://www.jakobutter.net">jakobutter.net</a></h3> <button onclick="openHeaderPopup()">i</button>
  	<div id="popup" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); z-index:999">
