@@ -1,5 +1,5 @@
 :root {
-    --deffont: simsun; /*default font*/
+    --deffont: monospace; /*default font*/
     --color1: #000000; /*text color*/
     --color2: #FF9BD0; /*window color*/
     --color3: #000000; /*background color*/
