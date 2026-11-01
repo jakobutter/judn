@@ -19,28 +19,32 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+function setPopupState(popup, isOpen) {
+  if (!popup) return;
+  popup.hidden = !isOpen;
+  popup.style.display = isOpen ? "block" : "none";
+}
+
+function bindPopupCloseHandlers(popup) {
+  if (!popup) return;
+
+  const closeButton = popup.querySelector(".close-button");
+  if (closeButton) {
+    closeButton.addEventListener("click", () => setPopupState(popup, false));
+  }
+
+  popup.addEventListener("click", (event) => {
+    if (event.target === popup) setPopupState(popup, false);
+  });
+}
+
 function bindHeaderPopup() {
   const button = document.getElementById("header-info-button");
   const popup = document.getElementById("header-info-popup");
   if (!button || !popup) return;
 
-  const open = () => {
-    popup.hidden = false;
-    popup.style.display = "block";
-  };
-
-  const close = () => {
-    popup.hidden = true;
-    popup.style.display = "none";
-  };
-
-  button.addEventListener("click", open);
-  const closeButton = popup.querySelector(".close-button");
-  if (closeButton) closeButton.addEventListener("click", close);
-
-  popup.addEventListener("click", (event) => {
-    if (event.target === popup) close();
-  });
+  bindPopupCloseHandlers(popup);
+  button.addEventListener("click", () => setPopupState(popup, true));
 }
 
 function bindHeaderDate() {
@@ -88,32 +92,29 @@ fetch("/panels.json")
   .then(res => res.json())
   .then(data => { panels = data; });
 
-function openPopup(id) {
-  const panel = panels.find(p => p.id === id);
-  if (!panel) return;
-
-  const existing = document.getElementById("active-popup");
+function createPopupWindow(contentHtml, id = "active-popup") {
+  const existing = document.getElementById(id);
   if (existing) existing.remove();
 
   const div = document.createElement("div");
-  div.id = "active-popup";
+  div.id = id;
   div.className = "popup-window";
   div.setAttribute("aria-modal", "true");
   div.innerHTML = `
     <button class="close-button" aria-label="Close">x</button>
-    ${panel.content}
+    ${contentHtml}
   `;
 
-  const closeButton = div.querySelector(".close-button");
-  if (closeButton) {
-    closeButton.addEventListener("click", () => div.remove());
-  }
+  bindPopupCloseHandlers(div);
+  return div;
+}
 
-  div.addEventListener("click", (event) => {
-    if (event.target === div) div.remove();
-  });
+function openPopup(id) {
+  const panel = panels.find(p => p.id === id);
+  if (!panel) return;
 
-  document.body.appendChild(div);
+  const popup = createPopupWindow(panel.content, "active-popup");
+  document.body.appendChild(popup);
 }
 
 function closePopup() {
